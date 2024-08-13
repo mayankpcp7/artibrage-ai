@@ -1,0 +1,12 @@
+.sky_shadow {
+  box-shadow: 0px 4px 25px 0px #00bfff;
+}
+.text_shadow_white {
+  text-shadow: 0px 4px 4px #00000040, 0px 0px 20px #fff, 0px 0px 20px #fff,
+    0px 0px 0px #fff, 0px 0px 0px #fff, 0px 1px 0px #fff, 0px 1px 0px #fff;
+}
+.text_shadow_blue {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 20px #00bfff,
+    0px 0px 20px #00bfff, 0px 0px 0px #00bfff, 0px 0px 0px #00bfff,
+    0px 1px 0px #00bfff, 0px 1px 0px #00bfff;
+}
