@@ -1,6 +1,10 @@
 .sky_shadow {
   box-shadow: 0px 4px 25px 0px #00bfff;
 }
+.ai_arbitrage_shadow {
+  text-shadow: 0px 1.33px 33.3px #fff;
+}
+
 .text_shadow_white {
   text-shadow: 0px 4px 4px #00000040, 0px 0px 20px #fff, 0px 0px 20px #fff,
     0px 0px 0px #fff, 0px 0px 0px #fff, 0px 1px 0px #fff, 0px 1px 0px #fff;

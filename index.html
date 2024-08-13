@@ -67,7 +67,7 @@
             fontSize: {
               "custom-xl": "22px",
               "custom-2xl": "28px",
-              "3xl": "36px",
+              "custom-3xl": "30px",
             },
             fontFamily: {
               inter: ["Inter"],
@@ -77,16 +77,22 @@
               oxanium: ["Oxanium"],
             },
             lineHeight: {
-              120: "120%",
-              130: "130%",
-              138: "138%",
-              150: "150%",
               113: "113%",
               116: "116%",
+              117: "117%",
+              120: "120%",
+              126: "126%",
+              130: "130%",
+              138: "138%",
+              140: "140%",
               142: "142%",
+              150: "150%",
             },
             borderRadius: {
               60: "60px",
+            },
+            boxShadow: {
+              "btn-blue": "0px 4px 25px 0px #00A4FF",
             },
           },
         },
@@ -110,54 +116,55 @@
         <div class="max-w-[1172px] mx-auto px-4">
           <div class="flex flex-col relative z-20">
             <img
-              class="max-w-[40px] sm:max-w-[45px] md:max-w-[57px] mx-auto"
+              class="max-w-[65px] sm:max-w-[75px] md:max-w-[92px] mx-auto"
               src="./assets/images/webp/logo.webp"
               alt="logo"
             />
-            <h2
-              class="text-center text-white font-semibold font_oxanium text_shadow_white text-xl md:text-2xl lg:text-3xl xl:text-4xl pt-3 leading"
+            <h1
+              class="text-center text-white font-semibold font-oxanium ai_arbitrage_shadow text-xl md:text-2xl lg:text-custom-3xl xl:text-4xl pt-3 sm:pt-4 lg:pt-5 !leading-116 uppercase"
             >
               AI Arbitrage Method Pro
-            </h2>
+            </h1>
             <span
-              class="bg-white w-full max-w-[880px] mx-auto h-[1px] flex mt-1"
+              class="bg-white w-full max-w-[880px] mx-auto h-[1px] flex mt-5"
             ></span>
             <p
-              class="text-white mt-12 font_oxygen font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl uppercase text-center text_shadow_blue"
+              class="text-white ;lg:mt-12 md:mt-8 mt-6 pt-1 font_oxygen font-bold md:text-2xl lg:text-custom-3xl xl:text-4xl uppercase !leading-126 text-center text_shadow_blue"
             >
               AI POWERED Arbitrage Method Pro
             </p>
             <p
-              class="pt-5 font-roboto font-bold text-xl md:text-2xl lg:text-custom-2xl uppercase text_shadow_blue text-white text-center"
+              class="pt-5 font-roboto font-bold text-xl md:text-2xl lg:text-custom-2xl text_shadow_blue text-white text-center !leading-117"
             >
               Tap into AI for Wealth Building With The World's #1 AI Method
             </p>
             <p
-              class="text-center lg:pt-4 pt-3 font-roboto leading-116 font-normal capitalize text-white md:text-xl sm:text-lg text-md lg:text-2xl max-w-[1108px] mx-auto"
+              class="text-center lg:pt-4 pt-3 font-roboto !leading-117 font-normal capitalize text-white md:text-xl text-base lg:text-2xl max-w-[1108px] mx-auto"
             >
               Watch Your Investment Skyrocket Effortlessly with a Simple AI
               System that Capitalizes on Price Differences! Investors Have Seen
               a Remarkable
-              <span class="text-light-sky font-semibold text-2xl">36.5%+</span>
-              Gains in Less Than 24 Hours! <span class="block"></span> Watch the Video Below to Discover How
+              <span class="text-light-sky font-semibold">36.5%+</span>
+              Gains in Less Than 24 Hours! <span class="lg:block"></span> Watch the
+              Video Below to Discover How
             </p>
             <div class="flex justify-center mt-5 items-center">
               <div class="relative">
                 <video
                   id="mainVideo"
-                  class="w-[982px] sky_shadow rounded-3xl border border-light-sky"
+                  class="md:w-[600px] sm:w-[500px] lg:w-[850px] xl:w-[982px] sky_shadow rounded-lg sm:rounded-xl md:rounded-3xl border border-light-sky"
                   poster="./assets/images/webp/video-cover.webp"
                   src="./assets/video/bg-video.mp4"
                 ></video>
                 <img
-                  class="play-icon max-w-[78px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] hover:scale-90 duration-300 z-10 cursor-pointer"
+                  class="play-icon max-w-[25px] sm:max-w-[40px] md:max-w-[50px] lg:max-w-[78px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] hover:scale-90 duration-300 z-10 cursor-pointer"
                   src="./assets/images/png/play-icon.png"
                   alt="play-icon"
                 />
               </div>
             </div>
             <div
-              class="flex rounded-60 mx-auto md:py-4 py-2 px-4 md:px-7 mt-9 flex-col bg-dark-sky-blue bg-opacity-[24%] border-[2px] border-light-sky sky_shadow"
+              class="flex rounded-60 mx-auto md:py-4 pt-2 pb-2.5 px-4 md:px-7 mt-6 md:mt-9 flex-col bg-dark-sky-blue bg-opacity-[24%] border-[2px] border-light-sky sky_shadow"
             >
               <div class="flex items-center">
                 <svg
@@ -174,36 +181,54 @@
                   />
                 </svg>
                 <p
-                  class="ms-3 font-oxygen md:text-lg sm:text-md text-sm lg:text-xl xl:text-custom-2xl font-bold leading-142 text-white"
+                  class="ms-3 font-oxygen text-sm sm:text-lg lg:text-xl xl:text-custom-2xl font-bold !leading-142 text-white"
                 >
                   Unlimited Access For Free!
                 </p>
               </div>
-              <p class="text-white text-center font-roboto text-lg">
+              <p
+                class="text-white text-center !leading-140 lg:pt-0.5 font-roboto text-xs sm:text-sm md:text-lg"
+              >
                 Risk Free Strategy
               </p>
             </div>
+            <div class="relative mt-4 sm:mt-6 md:mt-8 lg:mt-11">
+              <svg
+                class="absolute xl:block hidden start-5 top-1"
+                width="21"
+                height="16"
+                viewBox="0 0 21 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.5969 13.285C19.9094 13.285 20.2219 13.5975 20.2219 13.91V15.16C20.2219 15.5116 19.9094 15.785 19.5969 15.785H1.47188C0.76875 15.785 0.221875 15.2382 0.221875 14.535V1.41003C0.221875 1.09753 0.495313 0.785034 0.846875 0.785034H2.09688C2.40938 0.785034 2.72188 1.09753 2.72188 1.41003V13.285H19.5969ZM18.3469 2.03503C18.6594 2.03503 18.9719 2.34753 18.9328 2.66003V7.30847C18.9328 8.12878 17.9563 8.55847 17.3703 7.97253L16.0813 6.68347L12.3313 10.4335C11.8625 10.9413 11.0422 10.9413 10.5734 10.4335L7.72188 7.58191L5.88594 9.37878C5.65156 9.61316 5.26094 9.61316 5.02656 9.37878L4.12813 8.48035C3.89375 8.24597 3.89375 7.85535 4.12813 7.62097L6.82344 4.92566C7.29219 4.41785 8.1125 4.41785 8.58125 4.92566L11.4719 7.77722L14.3234 4.92566L13.0344 3.6366C12.4484 3.05066 12.8781 2.03503 13.6984 2.03503H18.3469Z"
+                  fill="#00A4FF"
+                />
+              </svg>
+
+              <p
+                class="text-center text-white font-roboto !leading-140 text-sm sm:text-base sm:text-lg lg:text-xl max-w-[802px] xl:max-w-[1085px] mx-auto"
+              >
+                Just apply this simple AI Method, and you'll instantly see where
+                to buy, sell, and take profit within seconds. With up to 93.2%
+                daily accuracy, our AI system simplifies your decisions and
+                helps you achieve consistent gains with minimal effort. Start
+                today and experience how effortless and profitable your account
+                will grow using AI-Arbitrage.
+              </p>
+            </div>
             <p
-              class="text-center text-white font-roboto leading-140 text-xl mt-11 max-w-[1085px] mx-auto"
-            >
-              Just apply this simple AI Method, and you'll instantly see where
-              to buy, sell, and take profit within seconds. With up to 93.2%
-              daily accuracy, our AI system simplifies your decisions and helps
-              you achieve consistent gains with minimal effort. Start today and
-              experience how effortless and profitable your account will grow
-              using AI-Arbitrage.
-            </p>
-            <h2
-              class="text-center pt-12 mt-1 font-roboto text_shadow_blue font-bold max-w-[875px] text-white capitalize leading-138 text-2xl lg:text-3xl xl:text-4xl mx-auto"
+              class="text-center pt-10 sm:pt-12 md:mt-1 font-roboto text_shadow_blue font-bold max-w-[500px] md:max-w-[600px] xl:max-w-[875px] text-white capitalize !leading-140 text-2xl lg:text-custom-3xl xl:text-4xl mx-auto"
             >
               The <span class="text-light-green">world's </span> must trusted AI
               method, proved by Experts all over the world.
-            </h2>
+            </p>
             <div
-              class="flex flex-col lg:gap-4 pb-1 w-full max-w-[827px] mx-auto"
+              class="flex flex-col lg:gap-4 gap-3 pb-1 w-full max-w-[827px] mx-auto"
             >
-              <div class="flex items-center pt-6 mt-0.5">
-                <svg
+              <div class="flex items-center pt-4 sm:pt-6 mt-0.5">
+                <svg class="md:max-w-[23px] max-w-4"
                   width="23"
                   height="18"
                   viewBox="0 0 23 18"
@@ -216,13 +241,13 @@
                   />
                 </svg>
                 <p
-                  class="ps-4 ms-0.5 text-white font-roboto text-md sm:text-xl lg:text-custom-xl font-normal"
+                  class="ps-4 ms-0.5 text-white font-roboto text-md sm:text-xl lg:text-custom-xl font-normal !leading-142"
                 >
                   Extremely Easy Setup: Get started in just (1 minute).
                 </p>
               </div>
               <div class="flex items-center">
-                <svg
+                <svg class="md:max-w-[23px] max-w-4"
                   width="23"
                   height="18"
                   viewBox="0 0 23 18"
@@ -235,14 +260,14 @@
                   />
                 </svg>
                 <p
-                  class="ps-4 ms-0.5 text-white font-roboto text-md sm:text-xl lg:text-custom-xl font-normal"
+                  class="ps-4 ms-0.5 text-white font-roboto text-md sm:text-xl lg:text-custom-xl font-normal !leading-142"
                 >
                   Highly accuracy.: AI Arbitrage achieves up to 93.2% daily
                   accuracy.
                 </p>
               </div>
               <div class="flex items-center">
-                <svg
+                <svg class="md:max-w-[23px] max-w-4"
                   width="23"
                   height="18"
                   viewBox="0 0 23 18"
@@ -255,13 +280,13 @@
                   />
                 </svg>
                 <p
-                  class="ps-4 ms-0.5 text-white font-roboto text-md sm:text-xl lg:text-custom-xl font-normal"
+                  class="ps-4 ms-0.5 text-white font-roboto text-md sm:text-xl lg:text-custom-xl font-normal !leading-130"
                 >
                   Real-Time: Receive live AI alerts.
                 </p>
               </div>
               <div class="flex items-center">
-                <svg
+                <svg class="md:max-w-[23px] max-w-4"
                   width="23"
                   height="18"
                   viewBox="0 0 23 18"
@@ -274,13 +299,13 @@
                   />
                 </svg>
                 <p
-                  class="ps-4 ms-0.5 text-white font-roboto text-md sm:text-xl lg:text-custom-xl font-normal"
+                  class="ps-4 ms-0.5 text-white font-roboto text-md sm:text-xl lg:text-custom-xl font-normal !leading-142"
                 >
                   Beginner-Friendly: Perfect for those with zero experience.
                 </p>
               </div>
               <div class="flex items-center">
-                <svg
+                <svg class="md:max-w-[23px] max-w-4"
                   width="23"
                   height="18"
                   viewBox="0 0 23 18"
@@ -293,7 +318,7 @@
                   />
                 </svg>
                 <p
-                  class="ps-4 ms-0.5 text-white font-roboto text-md sm:text-xl lg:text-custom-xl font-normal"
+                  class="ps-4 ms-0.5 text-white font-roboto text-md sm:text-xl lg:text-custom-xl font-normal !leading-142"
                 >
                   Comprehensive Support: Includes 1-on-1 calls with your account
                   manager.
@@ -301,11 +326,11 @@
               </div>
             </div>
             <button
-              class="py-3 px-4 whitespace-nowrap flex text-md md:text-xl lg:text-2xl hover:bg-light-sky duration-300 items-center justify-center w-[200px] md:w-[225px] mx-auto text-white font-bold font-lato mt-12 bg-dark-sky-blue rounded-60 border border-light-sky bg-opacity-[24%]"
+              class="py-2 md:py-3 px-4 whitespace-nowrap flex text-md md:text-xl lg:text-2xl hover:bg-light-sky duration-300 items-center justify-center w-[150px] md:w-[180px] lg:w-[225px] mx-auto text-white font-bold font-lato mt-6 md:mt-8 lg:mt-12 bg-dark-sky-blue rounded-60 border border-light-sky bg-opacity-[24%] shadow-btn-blue"
             >
               Get Started!
               <svg
-                class="ms-5"
+                class="ms-2 md:ms-5"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -321,23 +346,25 @@
           </div>
         </div>
       </section>
-      <section class="bg-white pt-14 lg:pb-20 mb-10">
+      <section class="bg-white pt-12 sm:pt-14 lg:pb-20 mb-10">
         <div class="max-w-[1172px] px-4 mx-auto">
           <h2
-            class="text-black font-bold leading-130 text-center xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-oxygen"
+            class="text-black font-bold !leading-130 text-center xl:text-5xl md:text-4xl text-custom-3xl font-oxygen"
           >
             Real success stories
           </h2>
           <p
-            class="text-center pt-3 md:pt-4 font-roboto leading-150 max-w-[821px] mx-auto capitalize text-sm sm:text-base md:text-lg lg:text-xl"
+            class="text-center pt-1 md:pt-4 font-roboto !leading-150 md:max-w-[650px] lg:max-w-[700px] xl:max-w-[821px] mx-auto capitalize text-sm sm:text-base md:text-lg lg:text-xl"
           >
             These testimonials highlight how AI Automated Arbitrage can lead to
             significant positive changes in the lives of many canadian families.
           </p>
           <div
-            class="grid mt-8 md:grid-cols-3 justify-center items-center sm:grid-cols-2 grid-cols-1 gap-8"
+            class="grid !max-w-[400px] sm:!max-w-full mx-auto mt-8 md:grid-cols-3 justify-center items-center sm:grid-cols-2 grid-cols-1 gap-5 md:gap-4 lg:gap-8"
           >
-            <div class="flex lg:max-w-[362px] group bg-dark-gray overflow-hidden flex-col relative rounded-lg">
+            <div
+              class="flex mx-auto lg:max-w-[362px] xl:min-w-[362px] group bg-dark-gray overflow-hidden flex-col relative rounded-lg"
+            >
               <div class="relative z-50 rounded-lg overflow-hidden">
                 <img
                   id="playButton2"
@@ -347,7 +374,7 @@
                 />
                 <video
                   id="video2"
-                  class="relative z-0 rounded-t-lg rounded-b-lg group-hover:scale-110 duration-300"
+                  class="relative z-0 duration-300 w-full h-[214px] object-cover"
                   src="./assets/video/bg-video.mp4"
                   poster="./assets/images/webp/melani.webp"
                   alt="melani"
@@ -357,13 +384,15 @@
                 class="flex justify-center items-center pb-4 pt-5 bg-dark-gray rounded-b-lg"
               >
                 <p
-                  class="font-roboto text-base text-white font-semibold leading-130"
+                  class="font-roboto text-base text-white font-semibold !leading-130"
                 >
                   MELANI FROM TORONTO
                 </p>
               </div>
             </div>
-            <div class="flex lg:max-w-[362px] group rounded-lg bg-dark-gray flex-col relative">
+            <div
+              class="flex mx-auto lg:max-w-[362px] xl:min-w-[362px] group rounded-lg bg-dark-gray flex-col relative"
+            >
               <div class="relative z-50 rounded-lg overflow-hidden">
                 <img
                   id="playButton3"
@@ -373,8 +402,8 @@
                 />
                 <video
                   id="video3"
-                  class="relative z-0 rounded-lg group-hover:scale-110 duration-300"
-                  src="./assets/video/bg-video.mp4"
+                  class="relative z-0 rounded-lg w-full object-cover h-[214px] duration-300"
+                  src="./assets/video/alex-brampton.mp4"
                   poster="./assets/images/webp/alex.webp"
                   alt="alex"
                 ></video>
@@ -383,13 +412,15 @@
                 class="flex justify-center items-center pb-4 pt-5 bg-dark-gray rounded-b-[8px]"
               >
                 <p
-                  class="font-roboto text-base text-white font-semibold leading-130"
+                  class="font-roboto text-base text-white font-semibold !leading-130"
                 >
                   ALEX FROM HAMILTON
                 </p>
               </div>
             </div>
-            <div class="flex lg:max-w-[362px] group bg-dark-gray overflow-hidden flex-col relative rounded-lg">
+            <div
+              class="flex mx-auto lg:max-w-[362px] xl:min-w-[362px] group bg-dark-gray overflow-hidden flex-col relative rounded-lg"
+            >
               <div class="relative z-50 rounded-lg overflow-hidden">
                 <img
                   id="playButton4"
@@ -399,8 +430,8 @@
                 />
                 <video
                   id="video4"
-                  class="relative z-0 rounded-t-lg rounded-b-lg group-hover:scale-110 duration-300"
-                  src="./assets/video/bg-video.mp4"
+                  class="relative z-0 duration-300 w-full h-[214px] object-cover"
+                  src="./assets/video/hana.mp4"
                   poster="./assets/images/webp/lilly.webp"
                   alt="lilly"
                 ></video>
@@ -409,13 +440,15 @@
                 class="flex justify-center items-center pb-4 pt-5 bg-dark-gray rounded-b-[8px]"
               >
                 <p
-                  class="font-roboto text-base text-white font-semibold leading-130"
+                  class="font-roboto text-base text-white font-semibold !leading-130"
                 >
                   LILLY FROM MONTREAL
                 </p>
               </div>
             </div>
-            <div class="flex lg:max-w-[362px] group bg-dark-gray overflow-hidden flex-col relative rounded-lg">
+            <div
+              class="flex mx-auto lg:max-w-[362px] xl:min-w-[362px] group bg-dark-gray overflow-hidden flex-col relative rounded-lg"
+            >
               <div class="relative z-50 rounded-lg overflow-hidden">
                 <img
                   id="playButton5"
@@ -425,8 +458,8 @@
                 />
                 <video
                   id="video5"
-                  class="relative z-0 rounded-t-lg rounded-b-lg group-hover:scale-110 duration-300"
-                  src="./assets/video/bg-video.mp4"
+                  class="relative z-0 w-full object-cover center h-[214px] duration-300"
+                  src="./assets/video/hana.mp4"
                   poster="./assets/images/webp/hana.webp"
                   alt="hana"
                 ></video>
@@ -435,13 +468,15 @@
                 class="flex justify-center items-center pb-4 pt-5 bg-dark-gray rounded-b-[8px]"
               >
                 <p
-                  class="font-roboto text-base text-white font-semibold leading-130"
+                  class="font-roboto text-base text-white font-semibold !leading-130"
                 >
                   HANA FROM TORONTO
                 </p>
               </div>
             </div>
-            <div class="flex lg:max-w-[362px] group bg-dark-gray overflow-hidden flex-col relative rounded-lg">
+            <div
+              class="flex mx-auto lg:max-w-[362px] xl:min-w-[362px] group bg-dark-gray overflow-hidden flex-col relative rounded-lg"
+            >
               <div class="relative z-50 rounded-lg overflow-hidden">
                 <img
                   id="playButton6"
@@ -451,8 +486,8 @@
                 />
                 <video
                   id="video6"
-                  class="relative z-0 rounded-t-lg rounded-b-lg group-hover:scale-110 duration-300"
-                  src="./assets/video/bg-video.mp4"
+                  class="relative z-0 duration-300 h-[214px] w-full object-cover"
+                  src="./assets/video/alex-brampton.mp4"
                   poster="./assets/images/webp/alex-brampton.webp"
                   alt="alex-brampton"
                 ></video>
@@ -461,13 +496,15 @@
                 class="flex justify-center items-center pb-4 pt-5 bg-dark-gray rounded-b-[8px]"
               >
                 <p
-                  class="font-roboto text-base text-white font-semibold leading-130"
+                  class="font-roboto text-base text-white font-semibold !leading-130"
                 >
                   ALEX FROM BRAMPTON
                 </p>
               </div>
             </div>
-            <div class="flex lg:max-w-[362px] group bg-dark-gray overflow-hidden flex-col relative rounded-lg">
+            <div
+              class="flex mx-auto lg:max-w-[362px] xl:min-w-[362px] group bg-dark-gray overflow-hidden flex-col relative rounded-lg"
+            >
               <div class="relative z-50 rounded-lg overflow-hidden">
                 <img
                   id="playButton7"
@@ -477,8 +514,8 @@
                 />
                 <video
                   id="video7"
-                  class="relative z-0 rounded-t-lg rounded-b-lg group-hover:scale-110 duration-300"
-                  src="./assets/video/bg-video.mp4"
+                  class="relative z-0 duration-300 w-full h-[214px] object-cover"
+                  src="./assets/video/sam.mp4"
                   poster="./assets/images/webp/sam.webp"
                   alt="sam"
                 ></video>
@@ -487,7 +524,7 @@
                 class="flex justify-center items-center pb-4 pt-5 bg-dark-gray rounded-b-[8px]"
               >
                 <p
-                  class="font-roboto text-base text-white font-semibold leading-130"
+                  class="font-roboto text-base text-white font-semibold !leading-130"
                 >
                   SAM FROM MARKHAM
                 </p>
@@ -497,56 +534,39 @@
         </div>
       </section>
     </div>
-  <script>
-  // Variable to keep track of the currently playing video
-  let currentPlayingVideo = null;
-
-  // Function to handle play button clicks
-  function handlePlayButtonClick(event) {
-    // Get the associated video element ID from the play button's ID
-    const playButtonId = event.target.id;
-    const videoId = playButtonId.replace("playButton", "video");
-
-    // Get the video element
-    const video = document.getElementById(videoId);
-
-    // If there's a currently playing video, pause it and hide its play button
-    if (currentPlayingVideo && currentPlayingVideo !== video) {
-      currentPlayingVideo.pause();
-      currentPlayingVideo.removeAttribute("controls");
-      
-      // Show the play button for the currently playing video
-      const currentPlayButton = document.getElementById(`playButton${currentPlayingVideo.id.replace("video", "")}`);
-      if (currentPlayButton) {
-        currentPlayButton.style.display = "block";
+    <script>
+      let currentPlayingVideo = null;
+      function handlePlayButtonClick(event) {
+        const playButtonId = event.target.id;
+        const videoId = playButtonId.replace("playButton", "video");
+        const video = document.getElementById(videoId);
+        if (currentPlayingVideo && currentPlayingVideo !== video) {
+          currentPlayingVideo.pause();
+          currentPlayingVideo.removeAttribute("controls");
+          const currentPlayButton = document.getElementById(
+            `playButton${currentPlayingVideo.id.replace("video", "")}`
+          );
+          if (currentPlayButton) {
+            currentPlayButton.style.display = "block";
+          }
+        }
+        event.target.style.display = "none";
+        if (video.hasAttribute("controls")) {
+          video.removeAttribute("controls");
+        } else {
+          video.setAttribute("controls", "true");
+        }
+        if (video.paused) {
+          video.play();
+          currentPlayingVideo = video;
+        } else {
+          video.pause();
+          currentPlayingVideo = null;
+        }
       }
-    }
-
-    // Hide the play button for the current video
-    event.target.style.display = "none";
-
-    // Toggle video controls
-    if (video.hasAttribute("controls")) {
-      video.removeAttribute("controls");
-    } else {
-      video.setAttribute("controls", "true");
-    }
-
-    // Play the video if it's not already playing
-    if (video.paused) {
-      video.play();
-      currentPlayingVideo = video;
-    } else {
-      video.pause();
-      currentPlayingVideo = null;
-    }
-  }
-
-  // Attach click event listeners to all play buttons
-  document.querySelectorAll(".play-button").forEach((button) => {
-    button.addEventListener("click", handlePlayButtonClick);
-  });
-</script>
-
+      document.querySelectorAll(".play-button").forEach((button) => {
+        button.addEventListener("click", handlePlayButtonClick);
+      });
+    </script>
   </body>
 </html>
