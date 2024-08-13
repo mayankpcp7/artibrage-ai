@@ -24,7 +24,7 @@
     />
     <meta
       property="og:image"
-      content="https://metatags.io/images/meta-tags.png"
+      content="https://thumbs2.imgbox.com/16/c2/SNcC8omE_t.png"
     />
 
     <!-- Twitter -->
@@ -40,9 +40,9 @@
     />
     <meta
       property="twitter:image"
-      content="https://metatags.io/images/meta-tags.png"
+      content="https://thumbs2.imgbox.com/16/c2/SNcC8omE_t.png"
     />
-    
+
     <link rel="icon" type="image/x-icon" href="./favicon.png" />
     <!-- Style Sheets -->
     <link rel="stylesheet" href="./assets/css/index.css" />
@@ -321,7 +321,7 @@
           </div>
         </div>
       </section>
-      <section class="bg-white pt-14 pb-20 mb-10">
+      <section class="bg-white pt-14 lg:pb-20 mb-10">
         <div class="max-w-[1172px] px-4 mx-auto">
           <h2
             class="text-black font-bold leading-130 text-center xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-oxygen"
@@ -497,38 +497,56 @@
         </div>
       </section>
     </div>
-    <script>
-      // Function to handle play button clicks
-      function handlePlayButtonClick(event) {
-        // Get the associated video element ID from the play button's ID
-        const playButtonId = event.target.id;
-        const videoId = playButtonId.replace("playButton", "video");
+  <script>
+  // Variable to keep track of the currently playing video
+  let currentPlayingVideo = null;
 
-        // Get the video element
-        const video = document.getElementById(videoId);
+  // Function to handle play button clicks
+  function handlePlayButtonClick(event) {
+    // Get the associated video element ID from the play button's ID
+    const playButtonId = event.target.id;
+    const videoId = playButtonId.replace("playButton", "video");
 
-        // Hide the play button
-        event.target.style.display = "none";
+    // Get the video element
+    const video = document.getElementById(videoId);
 
-        // Toggle video controls
-        if (video.hasAttribute("controls")) {
-          video.removeAttribute("controls");
-        } else {
-          video.setAttribute("controls", "true");
-        }
-
-        // Play the video if it's not already playing
-        if (video.paused) {
-          video.play();
-        } else {
-          video.pause();
-        }
+    // If there's a currently playing video, pause it and hide its play button
+    if (currentPlayingVideo && currentPlayingVideo !== video) {
+      currentPlayingVideo.pause();
+      currentPlayingVideo.removeAttribute("controls");
+      
+      // Show the play button for the currently playing video
+      const currentPlayButton = document.getElementById(`playButton${currentPlayingVideo.id.replace("video", "")}`);
+      if (currentPlayButton) {
+        currentPlayButton.style.display = "block";
       }
+    }
 
-      // Attach click event listeners to all play buttons
-      document.querySelectorAll(".play-button").forEach((button) => {
-        button.addEventListener("click", handlePlayButtonClick);
-      });
-    </script>
+    // Hide the play button for the current video
+    event.target.style.display = "none";
+
+    // Toggle video controls
+    if (video.hasAttribute("controls")) {
+      video.removeAttribute("controls");
+    } else {
+      video.setAttribute("controls", "true");
+    }
+
+    // Play the video if it's not already playing
+    if (video.paused) {
+      video.play();
+      currentPlayingVideo = video;
+    } else {
+      video.pause();
+      currentPlayingVideo = null;
+    }
+  }
+
+  // Attach click event listeners to all play buttons
+  document.querySelectorAll(".play-button").forEach((button) => {
+    button.addEventListener("click", handlePlayButtonClick);
+  });
+</script>
+
   </body>
 </html>
