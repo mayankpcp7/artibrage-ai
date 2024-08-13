@@ -145,24 +145,26 @@
               System that Capitalizes on Price Differences! Investors Have Seen
               a Remarkable
               <span class="text-light-sky font-semibold">36.5%+</span>
-              Gains in Less Than 24 Hours! <span class="lg:block"></span> Watch the
-              Video Below to Discover How
+              Gains in Less Than 24 Hours! <span class="lg:block"></span> Watch
+              the Video Below to Discover How
             </p>
             <div class="flex justify-center mt-5 items-center">
               <div class="relative">
                 <video
-                  id="mainVideo"
+                  id="video1"
                   class="md:w-[600px] sm:w-[500px] lg:w-[850px] xl:w-[982px] sky_shadow rounded-lg sm:rounded-xl md:rounded-3xl border border-light-sky"
                   poster="./assets/images/webp/video-cover.webp"
                   src="./assets/video/bg-video.mp4"
                 ></video>
                 <img
-                  class="play-icon max-w-[25px] sm:max-w-[40px] md:max-w-[50px] lg:max-w-[78px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] hover:scale-90 duration-300 z-10 cursor-pointer"
+                  id="playButton1"
+                  class="play-icon max-w-[25px] sm:max-w-[40px] md:max-w-[50px] lg:max-w-[78px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] hover:scale-90 duration-300 z-10 cursor-pointer play-button"
                   src="./assets/images/png/play-icon.png"
                   alt="play-icon"
                 />
               </div>
             </div>
+
             <div
               class="flex rounded-60 mx-auto md:py-4 pt-2 pb-2.5 px-4 md:px-7 mt-6 md:mt-9 flex-col bg-dark-sky-blue bg-opacity-[24%] border-[2px] border-light-sky sky_shadow"
             >
@@ -228,7 +230,8 @@
               class="flex flex-col lg:gap-4 gap-3 pb-1 w-full max-w-[827px] mx-auto"
             >
               <div class="flex items-center pt-4 sm:pt-6 mt-0.5">
-                <svg class="md:max-w-[23px] max-w-4"
+                <svg
+                  class="md:max-w-[23px] max-w-4"
                   width="23"
                   height="18"
                   viewBox="0 0 23 18"
@@ -247,7 +250,8 @@
                 </p>
               </div>
               <div class="flex items-center">
-                <svg class="md:max-w-[23px] max-w-4"
+                <svg
+                  class="md:max-w-[23px] max-w-4"
                   width="23"
                   height="18"
                   viewBox="0 0 23 18"
@@ -267,7 +271,8 @@
                 </p>
               </div>
               <div class="flex items-center">
-                <svg class="md:max-w-[23px] max-w-4"
+                <svg
+                  class="md:max-w-[23px] max-w-4"
                   width="23"
                   height="18"
                   viewBox="0 0 23 18"
@@ -286,7 +291,8 @@
                 </p>
               </div>
               <div class="flex items-center">
-                <svg class="md:max-w-[23px] max-w-4"
+                <svg
+                  class="md:max-w-[23px] max-w-4"
                   width="23"
                   height="18"
                   viewBox="0 0 23 18"
@@ -305,7 +311,8 @@
                 </p>
               </div>
               <div class="flex items-center">
-                <svg class="md:max-w-[23px] max-w-4"
+                <svg
+                  class="md:max-w-[23px] max-w-4"
                   width="23"
                   height="18"
                   viewBox="0 0 23 18"
@@ -536,13 +543,19 @@
     </div>
     <script>
       let currentPlayingVideo = null;
+
       function handlePlayButtonClick(event) {
         const playButtonId = event.target.id;
         const videoId = playButtonId.replace("playButton", "video");
         const video = document.getElementById(videoId);
+
         if (currentPlayingVideo && currentPlayingVideo !== video) {
           currentPlayingVideo.pause();
           currentPlayingVideo.removeAttribute("controls");
+          currentPlayingVideo.setAttribute(
+            "poster",
+            "./assets/images/webp/video-cover.webp"
+          );
           const currentPlayButton = document.getElementById(
             `playButton${currentPlayingVideo.id.replace("video", "")}`
           );
@@ -550,20 +563,22 @@
             currentPlayButton.style.display = "block";
           }
         }
+
         event.target.style.display = "none";
+
         if (video.hasAttribute("controls")) {
           video.removeAttribute("controls");
+          video.pause();
+          video.setAttribute("poster", "./assets/images/webp/video-cover.webp");
+          currentPlayingVideo = null;
         } else {
           video.setAttribute("controls", "true");
-        }
-        if (video.paused) {
           video.play();
           currentPlayingVideo = video;
-        } else {
-          video.pause();
-          currentPlayingVideo = null;
+          video.removeAttribute("poster");
         }
       }
+
       document.querySelectorAll(".play-button").forEach((button) => {
         button.addEventListener("click", handlePlayButtonClick);
       });
