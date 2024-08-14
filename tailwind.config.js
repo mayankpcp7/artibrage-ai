@@ -7,6 +7,7 @@ module.exports = {
         "dark-gray": "#1E1F27",
         "dark-sky-blue": "#103852",
         "light-sky": "#00A4FF",
+        "off-white": "#F6F6F6",
       },
       fontSize: {
         lg: "22px",

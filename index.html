@@ -48,7 +48,24 @@
     <link rel="stylesheet" href="./assets/css/index.css" />
     <link href="./assets/css/style.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tailwind Configue -->
+
+    <!-- slick min css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- slick theam min css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -62,6 +79,7 @@
               "light-sky": "#00A4FF",
               "sky-blue": "#00BFFF",
               "light-green": "#01D61B",
+              "parrot-green": "#3BFF00",
               "dark-gray": "#29333A",
             },
             fontSize: {
@@ -87,9 +105,11 @@
               140: "140%",
               142: "142%",
               150: "150%",
+              196: "196%",
             },
             borderRadius: {
               60: "60px",
+              20: "20px",
             },
             boxShadow: {
               "btn-blue": "0px 4px 25px 0px #00A4FF",
@@ -165,8 +185,8 @@
               </div>
             </div>
 
-            <div
-              class="flex rounded-60 mx-auto md:py-4 pt-2 pb-2.5 px-4 md:px-7 mt-6 md:mt-9 flex-col bg-dark-sky-blue bg-opacity-[24%] border-[2px] border-light-sky sky_shadow"
+            <button
+              class="flex hover:bg-light-sky duration-300 items-center hover:bg-opacity-100 rounded-60 mx-auto md:py-4 pt-2 pb-2.5 px-4 md:px-7 mt-6 md:mt-9 flex-col bg-dark-sky-blue bg-opacity-[24%] border-[2px] border-light-sky sky_shadow"
             >
               <div class="flex items-center">
                 <svg
@@ -193,7 +213,7 @@
               >
                 Risk Free Strategy
               </p>
-            </div>
+            </button>
             <div class="relative mt-4 sm:mt-6 md:mt-8 lg:mt-11">
               <svg
                 class="absolute xl:block hidden start-5 top-1"
@@ -540,10 +560,448 @@
           </div>
         </div>
       </section>
-    </div>
-    <script>
-      let currentPlayingVideo = null;
+      <!-- profitable ai winner -->
+      <section class="py-14 relative">
+        <video
+          class="absolute top-0 w-full -z-0 h-full object-cover bg-center"
+          muted
+          loop
+          autoplay
+          src="./assets/video/bg-video.mp4"
+        ></video>
+        <h2
+          class="text-center px-4 xl:px-0 relative z-10 max-w-[601px] mx-auto font-oxygen font-bold heading_shadow xl:text-5xl md:text-4xl text-custom-3xl text-white !leading-130 mt-1"
+        >
+          Become a profitable AI Winner!
+        </h2>
+        <p
+          class="text-center px-4 xl:px-0 max-w-[646px] relative z-10 pt-3 md:pt-4 font-roboto font-normal text-sm sm:text-base md:text-lg lg:text-xl text-white mx-auto"
+        >
+          People with different professions, were able to boost their income in
+          the first day using the AI-Method
+        </p>
+        <div
+          class="flex responsive mt-8 lg:mt-16 pt-1 relative z-10 items-start gap-9"
+        >
+          <div
+            class="flex flex-col h-[280px] lg:h-[332px] min-w-[350px] lg:min-w-[394px] pt-5 bg-white w-full rounded-20"
+          >
+            <div class="flex items-center justify-between px-3">
+              <div class="flex items-center">
+                <img
+                  class="max-w-11"
+                  src="./assets/images/png/michael.png"
+                  alt="michael"
+                />
+                <div class="flex flex-col ps-3">
+                  <p class="font-roboto font-semibold text-base !leading-130">
+                    Michael Chen
+                  </p>
+                  <img
+                    class="max-w-20 lg:max-w-[101px]"
+                    src="./assets/images/png/stars.png"
+                    alt="starts"
+                  />
+                </div>
+              </div>
+              <div class="flex lg:pe-5 flex-col">
+                <p
+                  class="font-roboto font-semibold ps-13 text-sm lg:text-base !leading-150 text-black opacity-70"
+                >
+                  Invested 350 CAD
+                </p>
+                <p
+                  class="font-roboto font-semibold ps-13 text-sm lg:text-base !leading-150 text-black opacity-70"
+                >
+                  Profit: 4,891 CAD
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-roboto max-w-[370px] pe-3 lg:pe-0 ps-3.5 text-sm lg:text-base text-black opacity-70 !leading-150 pt-4 lg:pt-7"
+            >
+              <span class="font-bold"> Review </span> The AI Arbitrage method is
+              incredible! It helped me make significant profits quickly and
+              effortlessly. My account manager was always there to support me
+              every step of the wayThe AI Arbitrage method is incredible! It
+              helped me make significant profits quickly and effortlessly. My
+              account manager was always there to support me every step of the
+              way.
+            </p>
+          </div>
+          <div
+            class="flex flex-col h-[280px] lg:h-[332px] min-w-[350px] lg:min-w-[394px] pt-5 bg-white w-full rounded-20"
+          >
+            <div class="flex items-center justify-between px-3">
+              <div class="flex items-center">
+                <img
+                  class="max-w-11"
+                  src="./assets/images/png/jennifer.png"
+                  alt="jennifer"
+                />
+                <div class="flex flex-col ps-3">
+                  <p class="font-roboto font-semibold text-base !leading-130">
+                    Jennifer Wilson
+                  </p>
+                  <img
+                    class="max-w-20 lg:max-w-[101px]"
+                    src="./assets/images/png/stars.png"
+                    alt="starts"
+                  />
+                </div>
+              </div>
+              <div class="flex lg:pe-5 flex-col">
+                <p
+                  class="font-roboto font-semibold ps-13 text-sm lg:text-base !leading-150 text-black opacity-70"
+                >
+                  Invested 2,000 CAD
+                </p>
+                <p
+                  class="font-roboto font-semibold ps-13 text-sm lg:text-base !leading-150 text-black opacity-70"
+                >
+                  Profit: 1,368.23 CAD
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-roboto max-w-[360px] pe-3 lg:pe-0 ps-3.5 text-sm lg:text-base text-black opacity-70 !leading-150 pt-4 lg:pt-7"
+            >
+              <span class="font-bold"> Review </span> Thanks to AI Arbitrage,
+              I’ve been able to make consistent profits with minimal effort.
+            </p>
+          </div>
+          <div
+            class="flex flex-col h-[280px] lg:h-[332px] min-w-[350px] lg:min-w-[394px] pt-5 bg-white w-full rounded-20"
+          >
+            <div class="flex items-center justify-between px-3">
+              <div class="flex items-center">
+                <img
+                  class="max-w-11"
+                  src="./assets/images/png/robert.png"
+                  alt="robert"
+                />
+                <div class="flex flex-col ps-3">
+                  <p class="font-roboto font-semibold text-base !leading-130">
+                    Robert Thompson
+                  </p>
+                  <img
+                    class="max-w-20 lg:max-w-[101px]"
+                    src="./assets/images/png/stars.png"
+                    alt="starts"
+                  />
+                </div>
+              </div>
+              <div class="flex lg:pe-5 flex-col">
+                <p
+                  class="font-roboto font-semibold ps-13 text-sm lg:text-base !leading-150 text-black opacity-70"
+                >
+                  Invested 30,000 CAD
+                </p>
+                <p
+                  class="font-roboto font-semibold ps-13 text-sm lg:text-base !leading-150 text-black opacity-70"
+                >
+                  Profit: 8,126 CAD
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-roboto max-w-[340px] ps-3.5 text-sm lg:text-base text-black opacity-70 !leading-150 pt-4 lg:pt-7"
+            >
+              <span class="font-bold"> Review </span> AI Arbitrage made trading
+              so simple and profitable. My account manager was always ready to
+              help and provide valuable insights. Highly recommend it!
+            </p>
+          </div>
+          <div
+            class="flex flex-col h-[280px] lg:h-[332px] min-w-[350px] lg:min-w-[394px] pt-5 bg-white w-full rounded-20"
+          >
+            <div class="flex items-center justify-between px-3">
+              <div class="flex items-center">
+                <img
+                  class="max-w-11"
+                  src="./assets/images/png/elizabeth.png"
+                  alt="elizabeth"
+                />
+                <div class="flex flex-col ps-3">
+                  <p class="font-roboto font-semibold text-base !leading-130">
+                    Elizabeth Brown
+                  </p>
+                  <img
+                    class="max-w-20 lg:max-w-[101px]"
+                    src="./assets/images/png/stars.png"
+                    alt="starts"
+                  />
+                </div>
+              </div>
+              <div class="flex lg:pe-5 flex-col">
+                <p
+                  class="font-roboto font-semibold ps-13 text-sm lg:text-base !leading-150 text-black opacity-70"
+                >
+                  Invested 350 CAD
+                </p>
+                <p
+                  class="font-roboto font-semibold ps-13 text-sm lg:text-base !leading-150 text-black opacity-70"
+                >
+                  Profit: 3,784 CAD
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-roboto max-w-[340px] ps-3.5 text-sm lg:text-base text-black opacity-70 !leading-150 pt-4 lg:pt-7"
+            >
+              <span class="font-bold"> Review </span>This method is a
+              game-changer! I’ve seen amazing returns on my investments.
+            </p>
+          </div>
+          <div
+            class="flex flex-col h-[280px] lg:h-[332px] min-w-[350px] lg:min-w-[394px] pt-5 bg-white w-full rounded-20"
+          >
+            <div class="flex items-center justify-between px-3">
+              <div class="flex items-center">
+                <img
+                  class="max-w-11"
+                  src="./assets/images/png/david.png"
+                  alt="elizabeth"
+                />
+                <div class="flex flex-col ps-3">
+                  <p class="font-roboto font-semibold text-base !leading-130">
+                    David Clark
+                  </p>
+                  <img
+                    class="max-w-20 lg:max-w-[101px]"
+                    src="./assets/images/png/stars.png"
+                    alt="starts"
+                  />
+                </div>
+              </div>
+              <div class="flex lg:pe-5 flex-col">
+                <p
+                  class="font-roboto font-semibold ps-13 text-sm lg:text-base !leading-150 text-black opacity-70"
+                >
+                  Invested 5,000 CAD
+                </p>
+                <p
+                  class="font-roboto font-semibold ps-13 text-sm lg:text-base !leading-150 text-black opacity-70"
+                >
+                  Profit: 3,274.5 CAD
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-roboto max-w-[340px] ps-3.5 text-sm lg:text-base text-black opacity-70 !leading-150 pt-4 lg:pt-7 pe-3 lg:pe-0"
+            >
+              <span class="font-bold"> Review </span>The AI Arbitrage system is
+              fantastic. It’s helped me achieve impressive profits effortlessly.
+            </p>
+          </div>
+          <div
+            class="flex flex-col h-[280px] lg:h-[332px] min-w-[350px] lg:min-w-[394px] pt-5 bg-white w-full rounded-20"
+          >
+            <div class="flex items-center justify-between px-3">
+              <div class="flex items-center">
+                <img
+                  class="max-w-11"
+                  src="./assets/images/png/michael.png"
+                  alt="michael"
+                />
+                <div class="flex flex-col ps-3">
+                  <p class="font-roboto font-semibold text-base !leading-130">
+                    Michael Chen
+                  </p>
+                  <img
+                    class="max-w-20 lg:max-w-[101px]"
+                    src="./assets/images/png/stars.png"
+                    alt="starts"
+                  />
+                </div>
+              </div>
+              <div class="flex lg:pe-5 flex-col">
+                <p
+                  class="font-roboto font-semibold ps-13 text-sm lg:text-base !leading-150 text-black opacity-70"
+                >
+                  Invested 350 CAD
+                </p>
+                <p
+                  class="font-roboto font-semibold ps-13 text-sm lg:text-base !leading-150 text-black opacity-70"
+                >
+                  Profit: 4,891 CAD
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-roboto max-w-[370px] ps-3.5 pe-3 lg:pe-0 text-sm lg:text-base text-black opacity-70 !leading-150 pt-4 lg:pt-7"
+            >
+              <span class="font-bold"> Review </span> The AI Arbitrage method is
+              incredible! It helped me make significant profits quickly and
+              effortlessly. My account manager was always there to support me
+              every step of the wayThe AI Arbitrage method is incredible! It
+              helped me make significant profits quickly and effortlessly. My
+              account manager was always there to support me every step of the
+              way.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- news agency -->
+      <section
+        class="py-12 md:py-16 lg:py-20 xl:py-32 lg:my-3 px-4 bg-off-white"
+      >
+        <div
+          class="flex flex-wrap justify-center xl:justify-between items-center mx-auto max-w-[1188px] gap-6 lg:gap-8 xl:gap-11"
+        >
+          <a href="https://www.forbes.com/">
+            <img
+              class="w-full object-cover xl:h-[111px] max-w-[80px] lg:max-w-[125px]"
+              src="./assets/images/png/forbes.png"
+              alt="news-agency"
+          /></a>
 
+          <a href="https://www.nbc.com/"
+            ><img
+              class="w-full xl:h-[111px] object-cover max-w-[60px] lg:max-w-[113px]"
+              src="./assets/images/png/nbc.png"
+              alt="news-agency"
+            />
+          </a>
+          <a href="https://www.foxnews.com/"
+            ><img
+              class="w-full xl:h-[111px] object-cover max-w-[100px] lg:max-w-[149px]"
+              src="./assets/images/png/fox-news.png"
+              alt="news-agency"
+            />
+          </a>
+          <a href="https://www.wsj.com/">
+            <img
+              class="w-full xl:h-[79px] object-cover max-w-[150px] lg:max-w-[188px]"
+              src="./assets/images/png/wall-street.png"
+              alt="news-agency"
+          /></a>
+          <a href="https://www.nytimes.com/">
+            <img
+              class="w-full xl:h-[111px] object-cover max-w-[250px] lg:max-w-[413px]"
+              src="./assets/images/png/new-york-times.png"
+              alt="news-agency"
+            />
+          </a>
+        </div>
+      </section>
+      <!-- live results -->
+      <section class="relative py-12 sm:py-16 md:py-20 lg:py24 xl:py-36">
+        <video
+          class="absolute top-0 w-full -z-0 h-full object-cover bg-center"
+          muted
+          loop
+          autoplay
+          src="./assets/video/bg-video.mp4"
+        ></video>
+        <div class="flex px-4 relative z-10 flex-col items-center">
+          <img
+            class="max-w-[87px] relative z-10"
+            src="./assets/images/png/group-logo.png"
+            alt="group-logo"
+          />
+          <div class="flex relative mt-8 md:mt-10 lg:mt-20 z-10 items-center justify-center">
+            <div
+              class="lg:h-[22px] sm:w-4 w-2 h-2 sm:h-4 lg:w-[22px] rounded-[50%] flex bg-parrot-green me-2"
+            ></div>
+            <h2
+              class="text-white !leading-196 text_shadow_blue text-xl md:text-2xl lg:text-custom-3xl xl:text-4xl !leading-130 font-oxygen font-bold"
+            >
+               Live Results :
+            </h2>
+          </div>
+          <div
+            class="w-full max-w-[550px] h-[1px] mt-3 bg-white bg-opacity-[48%] flex"
+          ></div>
+          <div class="flex sm:flex-row flex-col max-w-[400px] sm:max-w-full mx-auto items-start lg:items-center justify-start sm:justify-center mt-10 pt-0.5 flex-wrap gap-6 xl:gap-2.5">
+            <div class="flex items-center">
+              <img
+                class="max-w-5"
+                src="./assets/images/png/blue-tick.png"
+                alt="blue-tick"
+              />
+              <p class="font-roboto text-sm sm:text-base lg:text-xl ms-2 text-white">
+                VIP Arbitrage Winning Rate
+                <span class="text-parrot-green"> 93.2%        </span>
+              </p>
+            </div>
+            <div class="flex items-center">
+              <img
+                class="max-w-5"
+                src="./assets/images/png/blue-tick.png"
+                alt="blue-tick"
+              />
+              <p class="font-roboto text-sm sm:text-base lg:text-xl ms-2 text-white">
+                Active AI Arbitrage Opportunities:
+                <span class="text-parrot-green"> 6063   </span>
+              </p>
+            </div>
+            <div class="flex items-center">
+              <img
+                class="max-w-5"
+                src="./assets/images/png/blue-tick.png"
+                alt="blue-tick"
+              />
+              <p class="font-roboto text-sm sm:text-base lg:text-xl ms-2 text-white">
+                Number of opportunities taken:
+                <span class="text-parrot-green"> 6041   </span>
+              </p>
+            </div>
+          </div>
+          <div class="flex sm:flex-row flex-col max-w-[400px] sm:max-w-full mx-auto items-start lg:items-center justify-start sm:justify-center flex-wrap mb-1 mt-6 gap-6 lg:gap-10 xl:gap-20">
+            <div class="flex  items-center">
+              <img
+                class="max-w-5"
+                src="./assets/images/png/blue-tick.png"
+                alt="blue-tick"
+              />
+              <p class="font-roboto text-sm sm:text-base lg:text-xl ms-2 text-white">
+                VIP Arbitrage Winning Rate
+                <span class="text-parrot-green"> 93.2%        </span>
+              </p>
+            </div>
+            <div class="flex items-center">
+              <img
+                class="max-w-5"
+                src="./assets/images/png/blue-tick.png"
+                alt="blue-tick"
+              />
+              <p class="font-roboto text-sm sm:text-base lg:text-xl ms-2 text-white">
+                Active AI Arbitrage Opportunities:
+                <span class="text-parrot-green"> 6063   </span>
+              </p>
+            </div>
+          </div>
+          <button
+            class="mt-12 md:mt-16 flex gap-1.5 items-center shadow-btn-blue w-[180px] h-[40px] md:w-[200px] lg:w-[234px] sm:h-[45px] md:h-[50px] lg:h-[59px] text-white border border-light-sky rounded-60 justify-center bg-dark-sky-blue text-md md:text-xl hover:bg-light-sky duration-300  whitespace-nowrap"
+          >
+            Get started here
+            <img class="max-w-[17px]"
+              class="ms-2"
+              src="./assets/images/png/started-arrow.png"
+              alt="arrow"
+            />
+          </button>
+        </div>
+      </section>
+    </div>
+    <!-- j quairy min js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- slick min js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- videos play pauese -->
+    <script>
       function handlePlayButtonClick(event) {
         const playButtonId = event.target.id;
         const videoId = playButtonId.replace("playButton", "video");
@@ -581,6 +1039,46 @@
 
       document.querySelectorAll(".play-button").forEach((button) => {
         button.addEventListener("click", handlePlayButtonClick);
+      });
+    </script>
+    <!--- slider --->
+    <script>
+      $(".responsive").slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4.5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        centerMode: true,
+        centerPadding: "0",
+        responsive: [
+          {
+            breakpoint: 1440,
+            settings: {
+              slidesToShow: 3,
+              infinite: true,
+              centerMode: true,
+            },
+          },
+          {
+            breakpoint: 769,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              centerMode: true,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              centerMode: true,
+            },
+          },
+        ],
       });
     </script>
   </body>

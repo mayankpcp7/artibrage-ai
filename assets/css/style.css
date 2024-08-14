@@ -14,3 +14,21 @@
     0px 0px 20px #00bfff, 0px 0px 0px #00bfff, 0px 0px 0px #00bfff,
     0px 1px 0px #00bfff, 0px 1px 0px #00bfff;
 }
+
+.heading_shadow {
+  text-shadow: 0px 0px 20px #00bfff, 0px 0px 20px #00bfff, 0px 1px 0px #00bfff,
+    0px 1px 0px #00bfff;
+}
+.slick-slide {
+  margin: 0px 18px !important;
+}
+.slick-track {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+@media (max-width: 767.98px) {
+  .slick-slide {
+    margin: 0px 12px !important;
+  }
+}
