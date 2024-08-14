@@ -90,7 +90,7 @@
             fontFamily: {
               inter: ["Inter"],
               lato: ["Lato"],
-              roboto: ["Roboto"],
+              roboto: ["Roboto", sans - sarif],
               oxygen: ["Oxygen"],
               oxanium: ["Oxanium"],
             },
@@ -119,9 +119,9 @@
       };
     </script>
     <div class="max-w-[1920px] mx-auto overflow-hidden">
-      <section class="relative z-1 pt-7 pb-24">
+      <section class="relative z-1 pt-7 pb-12 sm:pb-16 md:pb-24">
         <img
-          class="absolute top-6 start-9 z-10 max-w-[18px]"
+          class="absolute cursor-pointer top-6 start-9 z-10 max-w-[18px]"
           src="./assets/images/webp/hamburger-logo.webp"
           alt="hamburger-logo"
         />
@@ -149,7 +149,7 @@
               class="bg-white w-full max-w-[880px] mx-auto h-[1px] flex mt-5"
             ></span>
             <p
-              class="text-white ;lg:mt-12 md:mt-8 mt-6 pt-1 font_oxygen font-bold md:text-2xl lg:text-custom-3xl xl:text-4xl uppercase !leading-126 text-center text_shadow_blue"
+              class="text-white lg:mt-12 md:mt-8 mt-6 pt-1 font_oxygen font-bold md:text-2xl lg:text-custom-3xl xl:text-4xl uppercase !leading-126 text-center text_shadow_blue"
             >
               AI POWERED Arbitrage Method Pro
             </p>
@@ -353,7 +353,7 @@
               </div>
             </div>
             <button
-              class="py-2 md:py-3 px-4 whitespace-nowrap flex text-md md:text-xl lg:text-2xl hover:bg-light-sky duration-300 items-center justify-center w-[150px] md:w-[180px] lg:w-[225px] mx-auto text-white font-bold font-lato mt-6 md:mt-8 lg:mt-12 bg-dark-sky-blue rounded-60 border border-light-sky bg-opacity-[24%] shadow-btn-blue"
+              class="py-2 md:py-3 px-3 whitespace-nowrap flex text-md md:text-xl lg:text-2xl hover:bg-light-sky duration-300 items-center justify-center w-[150px] md:w-[180px] lg:w-[225px] mx-auto text-white font-bold font-lato mt-6 md:mt-8 lg:mt-12 bg-dark-sky-blue rounded-60 border border-light-sky bg-opacity-[24%] shadow-btn-blue"
             >
               Get Started!
               <svg
@@ -851,7 +851,7 @@
         >
           <a href="https://www.forbes.com/">
             <img
-              class="w-full object-cover xl:h-[111px] max-w-[80px] xl:min-w-[125px] min-w-0  lg:max-w-[125px]"
+              class="w-full object-cover xl:h-[111px] max-w-[80px] xl:min-w-[125px] min-w-0 lg:max-w-[125px]"
               src="./assets/images/png/forbes.png"
               alt="news-agency"
           /></a>
@@ -900,7 +900,9 @@
             src="./assets/images/png/group-logo.png"
             alt="group-logo"
           />
-          <div class="flex relative mt-8 md:mt-10 lg:mt-20 z-10 items-center justify-center">
+          <div
+            class="flex relative mt-8 md:mt-10 lg:mt-20 z-10 items-center justify-center"
+          >
             <div
               class="lg:h-[22px] sm:w-4 w-2 h-2 sm:h-4 lg:w-[22px] rounded-[50%] flex bg-parrot-green me-2"
             ></div>
@@ -913,14 +915,18 @@
           <div
             class="w-full max-w-[550px] h-[1px] mt-3 bg-white bg-opacity-[48%] flex"
           ></div>
-          <div class="flex sm:flex-row flex-col max-w-[400px] sm:max-w-full mx-auto items-start lg:items-center justify-start sm:justify-center mt-10 pt-0.5 flex-wrap gap-6 xl:gap-2.5">
+          <div
+            class="flex sm:flex-row flex-col max-w-[400px] sm:max-w-full mx-auto items-start lg:items-center justify-start sm:justify-center mt-10 pt-0.5 flex-wrap gap-6 xl:gap-2.5"
+          >
             <div class="flex items-center">
               <img
                 class="max-w-5"
                 src="./assets/images/png/blue-tick.png"
                 alt="blue-tick"
               />
-              <p class="font-roboto !leading-142 text-sm sm:text-base lg:text-xl ms-2 text-white">
+              <p
+                class="font-roboto !leading-142 text-sm sm:text-base lg:text-xl ms-2 text-white"
+              >
                 VIP Arbitrage Winning Rate
                 <span class="text-parrot-green"> 93.2%        </span>
               </p>
@@ -931,7 +937,9 @@
                 src="./assets/images/png/blue-tick.png"
                 alt="blue-tick"
               />
-              <p class="font-roboto text-sm !leading-142 sm:text-base lg:text-xl ms-2 text-white">
+              <p
+                class="font-roboto text-sm !leading-142 sm:text-base lg:text-xl ms-2 text-white"
+              >
                 Active AI Arbitrage Opportunities:
                 <span class="text-parrot-green"> 6063   </span>
               </p>
@@ -942,20 +950,26 @@
                 src="./assets/images/png/blue-tick.png"
                 alt="blue-tick"
               />
-              <p class="font-roboto !leading-142 text-sm sm:text-base lg:text-xl ms-2 text-white">
+              <p
+                class="font-roboto !leading-142 text-sm sm:text-base lg:text-xl ms-2 text-white"
+              >
                 Number of opportunities taken:
                 <span class="text-parrot-green"> 6041   </span>
               </p>
             </div>
           </div>
-          <div class="flex sm:flex-row flex-col max-w-[400px] sm:max-w-full mx-auto items-start lg:items-center justify-start sm:justify-center flex-wrap mb-1 mt-6 gap-6 lg:gap-10 xl:gap-20">
-            <div class="flex  items-center">
+          <div
+            class="flex sm:flex-row flex-col max-w-[400px] sm:max-w-full mx-auto items-start lg:items-center justify-start sm:justify-center flex-wrap mb-1 mt-6 gap-6 lg:gap-10 xl:gap-20"
+          >
+            <div class="flex items-center">
               <img
                 class="max-w-5"
                 src="./assets/images/png/blue-tick.png"
                 alt="blue-tick"
               />
-              <p class="font-roboto text-sm sm:text-base lg:text-xl !leading-142 ms-2 text-white">
+              <p
+                class="font-roboto text-sm sm:text-base lg:text-xl !leading-142 ms-2 text-white"
+              >
                 VIP Arbitrage Winning Rate
                 <span class="text-parrot-green"> 93.2%        </span>
               </p>
@@ -966,17 +980,20 @@
                 src="./assets/images/png/blue-tick.png"
                 alt="blue-tick"
               />
-              <p class="font-roboto text-sm sm:text-base lg:text-xl ms-2 !leading-142 text-white">
+              <p
+                class="font-roboto text-sm sm:text-base lg:text-xl ms-2 !leading-142 text-white"
+              >
                 Active AI Arbitrage Opportunities:
                 <span class="text-parrot-green"> 6063   </span>
               </p>
             </div>
           </div>
           <button
-            class="mt-12 md:mt-16 mb-1.5 flex gap-1.5 items-center shadow-btn-blue w-[180px] h-[40px] md:w-[200px] lg:w-[234px] sm:h-[45px] md:h-[50px] lg:h-[59px] text-white border border-light-sky rounded-60 justify-center bg-dark-sky-blue text-md md:text-xl hover:bg-light-sky duration-300  whitespace-nowrap"
+            class="mt-12 md:mt-16 mb-1.5 flex gap-1.5 items-center shadow-btn-blue w-[180px] h-[40px] md:w-[200px] lg:w-[234px] sm:h-[45px] md:h-[50px] lg:h-[59px] text-white border border-light-sky rounded-60 justify-center bg-dark-sky-blue text-md md:text-xl hover:bg-light-sky duration-300 whitespace-nowrap"
           >
             Get started here
-            <img class="max-w-[17px]"
+            <img
+              class="max-w-[17px]"
               class="ms-2"
               src="./assets/images/png/started-arrow.png"
               alt="arrow"
@@ -1002,11 +1019,14 @@
     ></script>
     <!-- videos play pauese -->
     <script>
+      let currentPlayingVideo = null; // Define the variable to track the currently playing video
+
       function handlePlayButtonClick(event) {
         const playButtonId = event.target.id;
         const videoId = playButtonId.replace("playButton", "video");
         const video = document.getElementById(videoId);
 
+        // Pause and reset the currently playing video if it exists and is different from the new one
         if (currentPlayingVideo && currentPlayingVideo !== video) {
           currentPlayingVideo.pause();
           currentPlayingVideo.removeAttribute("controls");
@@ -1022,8 +1042,7 @@
           }
         }
 
-        event.target.style.display = "none";
-
+        // Handle the video control and play/pause logic
         if (video.hasAttribute("controls")) {
           video.removeAttribute("controls");
           video.pause();
@@ -1035,6 +1054,9 @@
           currentPlayingVideo = video;
           video.removeAttribute("poster");
         }
+
+        // Toggle the display of the play button
+        event.target.style.display = "none";
       }
 
       document.querySelectorAll(".play-button").forEach((button) => {
@@ -1043,42 +1065,44 @@
     </script>
     <!--- slider --->
     <script>
-      $(".responsive").slick({
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 4.5,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        centerMode: true,
-        centerPadding: "0",
-        responsive: [
-          {
-            breakpoint: 1440,
-            settings: {
-              slidesToShow: 3,
-              infinite: true,
-              centerMode: true,
+      $(document).ready(function () {
+        $(".responsive").slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 4.5,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          centerMode: true,
+          centerPadding: "0",
+          responsive: [
+            {
+              breakpoint: 1440,
+              settings: {
+                slidesToShow: 3,
+                infinite: true,
+                centerMode: true,
+              },
             },
-          },
-          {
-            breakpoint: 769,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              centerMode: true,
+            {
+              breakpoint: 769,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                centerMode: true,
+              },
             },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              centerMode: true,
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+              },
             },
-          },
-        ],
+          ],
+        });
       });
     </script>
   </body>
