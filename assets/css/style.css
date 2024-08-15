@@ -70,7 +70,9 @@
   display: block;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 @media (max-width: 767.98px) {
   .slick-slide {
     margin: 0px 12px !important;
