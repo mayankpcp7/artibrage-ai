@@ -34,10 +34,9 @@
   transition: max-height 0.3s ease;
 }
 .accordion-item.open {
- box-shadow: 0px 25px 39px -9px #00000017;
- border: none !important;
- padding-bottom: 20px !important;
-
+  box-shadow: 0px 25px 39px -9px #00000017;
+  border: none !important;
+  padding-bottom: 20px !important;
 }
 
 .panel {
