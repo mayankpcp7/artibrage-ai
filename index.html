@@ -25,10 +25,10 @@
   <meta property="twitter:description"
     content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
   <meta property="twitter:image" content="https://thumbs2.imgbox.com/16/c2/SNcC8omE_t.png" />
-<!-- favicon -->
+  <!-- favicon -->
   <link rel="icon" type="image/x-icon" href="./favicon.png" />
   <!-- aos -->
-   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Style Sheets -->
   <link rel="stylesheet" href="./assets/css/index.css" />
   <link href="./assets/css/style.css" rel="stylesheet" />
@@ -55,6 +55,7 @@
             "off-black": "#020507",
             "dark-gray": "#1E1F27",
             "dark-sky-blue": "#00A4FF3D",
+            "lightest-sky":"#ccedff",
             "light-sky": "#00A4FF",
             "sky-blue": "#00BFFF",
             "light-green": "#01D61B",
@@ -100,10 +101,12 @@
           boxShadow: {
             "btn-blue": "0px 4px 25px 0px #00A4FF",
             "accordion-icon": "0px 8px 19.3px 0px #00A4FF",
-            "form-btn":"0px 2px 10px 0px #00000026"
+            "form-btn": "0px 2px 10px 0px #00000026",
+           "dark-gradient-blue": "0px 9px 20.3px 2px #00A4FF",
           },
           backgroundImage: {
             'sky-gradiant': "linear-gradient(91.34deg, rgba(0, 164, 255, 0) 0%, rgba(0, 164, 255, 0.35) 9.95%, #00A4FF 48.76%, rgba(0, 164, 255, 0.35) 87.72%, rgba(0, 164, 255, 0) 97.72%)",
+            "dark-blue-gradient":"linear-gradient(90deg, #7DD0FF 0%, #00A4FF 100%)",
           },
         },
       },
@@ -113,27 +116,28 @@
     <section class="relative z-1 pt-7 pb-12 sm:pb-16 md:pb-24">
       <img data-aos="fade-zoom-in" class="absolute cursor-pointer top-6 start-9 z-10 max-w-[18px]"
         src="./assets/images/webp/hamburger-logo.webp" alt="hamburger-logo" />
-      <video class="absolute z-0 top-0 left-0 w-full h-full object-cover bg-center" muted loop autoplay>
+      <video class="absolute z-0 top-0 left-0 w-full h-full opacity-80 object-cover bg-center" muted loop autoplay>
         <source src="./assets/video/bg-video.mp4" />
       </video>
       <div class="max-w-[1172px] mx-auto px-4">
         <div class="flex flex-col relative z-20">
-          <img data-aos="fade-zoom-in" data-aos-duration="1500" class="max-w-[65px] sm:max-w-[75px] md:max-w-[92px] mx-auto" src="./assets/images/webp/logo.webp"
+          <img data-aos="fade-zoom-in" data-aos-duration="1500"
+            class="max-w-[65px] sm:max-w-[75px] md:max-w-[92px] mx-auto" src="./assets/images/webp/logo.webp"
             alt="logo" />
-          <h1 data-aos="fade-up"data-aos-duration="2000"
+          <h1 data-aos="fade-up" data-aos-duration="2000"
             class="text-center text-white font-semibold font-oxanium ai_arbitrage_shadow text-xl md:text-2xl lg:text-custom-3xl xl:text-4xl pt-3 sm:pt-4 lg:pt-5 !leading-116 uppercase">
             AI Arbitrage Method Pro
           </h1>
           <span class="bg-white w-full max-w-[880px] mx-auto h-[1px] flex mt-5"></span>
-          <p data-aos="fade-up"data-aos-duration="2000"
+          <p data-aos="fade-up" data-aos-duration="2000"
             class="text-white lg:mt-12 md:mt-8 mt-6 pt-1 font_oxygen font-bold md:text-2xl lg:text-custom-3xl xl:text-4xl uppercase !leading-126 text-center text_shadow_blue">
             AI POWERED Arbitrage Method Pro
           </p>
-          <p data-aos="fade-up"data-aos-duration="2000"
+          <p data-aos="fade-up" data-aos-duration="2000"
             class="pt-5 font-roboto font-bold text-xl md:text-2xl lg:text-custom-2xl text_shadow_blue text-white text-center !leading-117">
             Tap into AI for Wealth Building With The World's #1 AI Method
           </p>
-          <p data-aos="fade-up"data-aos-duration="2000"
+          <p data-aos="fade-up" data-aos-duration="2000"
             class="text-center pt-4 font-roboto !leading-117 font-normal capitalize text-white md:text-xl text-base lg:text-2xl max-w-[1108px] mx-auto">
             Watch Your Investment Skyrocket Effortlessly with a Simple AI
             System that Capitalizes on Price Differences! Investors Have Seen
@@ -272,20 +276,21 @@
       </div>
     </section>
     <!-- rela success story -->
-    <section class="bg-white pt-12 sm:pt-14 pb-3 lg:pb-20 mb-10">
+    <section class="bg-white pt-12 sm:pt-12 md pb-3 lg:pb-20 mb-10">
       <div class="max-w-[1172px] px-4 mx-auto">
-        <h2 data-aos-duration="2000" data-aos="fade-in" class="text-black font-bold !leading-130 text-center xl:text-5xl md:text-4xl text-custom-3xl font-oxygen">
+        <h2 data-aos-duration="2000" data-aos="fade-in"
+          class="text-black font-bold !leading-130 text-center xl:text-5xl md:text-4xl text-custom-3xl font-oxygen">
           Real success stories
         </h2>
         <p data-aos-duration="2000" data-aos="fade-in"
-          class="text-center pt-1 md:pt-4 font-roboto !leading-150 md:max-w-[650px] lg:max-w-[700px] xl:max-w-[821px] mx-auto capitalize text-sm sm:text-base md:text-lg lg:text-xl">
+          class="text-center pt-1 md:pt-4 font-roboto !leading-150 md:max-w-[650px] lg:max-w-[700px] xl:max-w-[821px] mx-auto capitalize !opacity-80 text-sm sm:text-base md:text-lg lg:text-xl">
           These testimonials highlight how AI Automated Arbitrage can lead to
           significant positive changes in the lives of many canadian families.
         </p>
         <div
           class="grid !max-w-[400px] sm:!max-w-full mx-auto mt-8 md:grid-cols-3 justify-center items-center sm:grid-cols-2 grid-cols-1 gap-5 md:gap-4 lg:gap-8">
-          <div 
-            data-aos="flip-left" data-aos-duration="2000" class="flex mx-auto lg:max-w-[362px] xl:min-w-[362px] group bg-dark-gray overflow-hidden flex-col relative rounded-lg">
+          <div data-aos="flip-left" data-aos-duration="2000"
+            class="flex mx-auto lg:max-w-[362px] xl:min-w-[362px] group bg-dark-gray overflow-hidden flex-col relative rounded-lg">
             <div class="relative z-50 rounded-lg overflow-hidden">
               <img id="playButton2"
                 class="play-button max-w-[27.36px] mx-auto z-50 absolute cursor-pointer hover:scale-110 duration-300 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
@@ -298,8 +303,9 @@
                 MELANI FROM TORONTO
               </p>
             </div>
-          </div> 
-          <div data-aos="flip-left" data-aos-duration="2000" class="flex mx-auto lg:max-w-[362px] xl:min-w-[362px] group rounded-lg bg-dark-gray flex-col relative">
+          </div>
+          <div data-aos="flip-left" data-aos-duration="2000"
+            class="flex mx-auto lg:max-w-[362px] xl:min-w-[362px] group rounded-lg bg-dark-gray flex-col relative">
             <div class="relative z-50 rounded-lg overflow-hidden">
               <img id="playButton3"
                 class="play-button max-w-[27.36px] mx-auto z-50 absolute cursor-pointer hover:scale-110 duration-300 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
@@ -313,8 +319,8 @@
               </p>
             </div>
           </div>
-          <div 
-            data-aos="flip-left" data-aos-duration="2000" class="flex mx-auto lg:max-w-[362px] xl:min-w-[362px] group bg-dark-gray overflow-hidden flex-col relative rounded-lg">
+          <div data-aos="flip-left" data-aos-duration="2000"
+            class="flex mx-auto lg:max-w-[362px] xl:min-w-[362px] group bg-dark-gray overflow-hidden flex-col relative rounded-lg">
             <div class="relative z-50 rounded-lg overflow-hidden">
               <img id="playButton4"
                 class="play-button max-w-[27.36px] mx-auto z-50 absolute cursor-pointer hover:scale-110 duration-300 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
@@ -328,8 +334,8 @@
               </p>
             </div>
           </div>
-          <div 
-            data-aos="flip-left" data-aos-duration="2000" class="flex mx-auto lg:max-w-[362px] xl:min-w-[362px] group bg-dark-gray overflow-hidden flex-col relative rounded-lg">
+          <div data-aos="flip-left" data-aos-duration="2000"
+            class="flex mx-auto lg:max-w-[362px] xl:min-w-[362px] group bg-dark-gray overflow-hidden flex-col relative rounded-lg">
             <div class="relative z-50 rounded-lg overflow-hidden">
               <img id="playButton5"
                 class="play-button max-w-[27.36px] mx-auto z-50 absolute cursor-pointer hover:scale-110 duration-300 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
@@ -343,8 +349,8 @@
               </p>
             </div>
           </div>
-          <div 
-            data-aos="flip-left" data-aos-duration="2000" class="flex mx-auto lg:max-w-[362px] xl:min-w-[362px] group bg-dark-gray overflow-hidden flex-col relative rounded-lg">
+          <div data-aos="flip-left" data-aos-duration="2000"
+            class="flex mx-auto lg:max-w-[362px] xl:min-w-[362px] group bg-dark-gray overflow-hidden flex-col relative rounded-lg">
             <div class="relative z-50 rounded-lg overflow-hidden">
               <img id="playButton6"
                 class="play-button max-w-[27.36px] mx-auto z-50 absolute cursor-pointer hover:scale-110 duration-300 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
@@ -359,8 +365,8 @@
               </p>
             </div>
           </div>
-          <div 
-            data-aos="flip-left" data-aos-duration="2000" class="flex mx-auto lg:max-w-[362px] xl:min-w-[362px] group bg-dark-gray overflow-hidden flex-col relative rounded-lg">
+          <div data-aos="flip-left" data-aos-duration="2000"
+            class="flex mx-auto lg:max-w-[362px] xl:min-w-[362px] group bg-dark-gray overflow-hidden flex-col relative rounded-lg">
             <div class="relative z-50 rounded-lg overflow-hidden">
               <img id="playButton7"
                 class="play-button max-w-[27.36px] mx-auto z-50 absolute cursor-pointer hover:scale-110 duration-300 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
@@ -379,7 +385,7 @@
     </section>
     <!-- profitable ai winner -->
     <section class="py-14 relative">
-      <video class="absolute top-0 w-full -z-0 h-full object-cover bg-center" muted loop autoplay
+      <video class="absolute opacity-80 top-0 w-full -z-0 h-full object-cover bg-center" muted loop autoplay
         src="./assets/video/bg-video.mp4"></video>
       <h2 data-aos="fade-up" data-aos-duration="2000"
         class="text-center px-4 xl:px-0 relative z-10 max-w-[500px] mx-auto font-oxygen font-bold heading_shadow xl:text-5xl md:text-4xl text-custom-3xl text-white !leading-130 mt-1">
@@ -391,8 +397,8 @@
         the first day using the AI-Method
       </p>
       <div class="flex responsive mt-8 mb-2 lg:mt-16 pt-1 relative z-10 items-start gap-9">
-        <div
-        data-aos="fade-up" data-aos-duration="2000"  class="flex flex-col h-[280px] lg:h-[332px] min-w-[350px] lg:min-w-[394px] pt-5 bg-white w-full rounded-20">
+        <div data-aos="fade-up" data-aos-duration="2000"
+          class="flex flex-col h-[280px] lg:h-[332px] min-w-[350px] lg:min-w-[394px] pt-5 bg-white w-full rounded-20">
           <div class="flex items-center justify-between px-3">
             <div class="flex items-center">
               <img class="max-w-11" src="./assets/images/webp/michael.webp" alt="michael" />
@@ -423,8 +429,8 @@
             way.
           </p>
         </div>
-        <div
-        data-aos="fade-up" data-aos-duration="2000"  class="flex flex-col h-[280px] lg:h-[332px] min-w-[350px] lg:min-w-[394px] pt-5 bg-white w-full rounded-20">
+        <div data-aos="fade-up" data-aos-duration="2000"
+          class="flex flex-col h-[280px] lg:h-[332px] min-w-[350px] lg:min-w-[394px] pt-5 bg-white w-full rounded-20">
           <div class="flex items-center justify-between px-3">
             <div class="flex items-center">
               <img class="max-w-11" src="./assets/images/webp/jennifer.webp" alt="jennifer" />
@@ -450,8 +456,8 @@
             I’ve been able to make consistent profits with minimal effort.
           </p>
         </div>
-        <div
-        data-aos="fade-up" data-aos-duration="2000"  class="flex flex-col h-[280px] lg:h-[332px] min-w-[350px] lg:min-w-[394px] pt-5 bg-white w-full rounded-20">
+        <div data-aos="fade-up" data-aos-duration="2000"
+          class="flex flex-col h-[280px] lg:h-[332px] min-w-[350px] lg:min-w-[394px] pt-5 bg-white w-full rounded-20">
           <div class="flex items-center justify-between px-3">
             <div class="flex items-center">
               <img class="max-w-11" src="./assets/images/webp/robert.webp" alt="robert" />
@@ -478,8 +484,8 @@
             help and provide valuable insights. Highly recommend it!
           </p>
         </div>
-        <div
-        data-aos="fade-up" data-aos-duration="2000"  class="flex flex-col h-[280px] lg:h-[332px] min-w-[350px] lg:min-w-[394px] pt-5 bg-white w-full rounded-20">
+        <div data-aos="fade-up" data-aos-duration="2000"
+          class="flex flex-col h-[280px] lg:h-[332px] min-w-[350px] lg:min-w-[394px] pt-5 bg-white w-full rounded-20">
           <div class="flex items-center justify-between px-3">
             <div class="flex items-center">
               <img class="max-w-11" src="./assets/images/webp/elizabeth.webp" alt="elizabeth" />
@@ -505,8 +511,8 @@
             game-changer! I’ve seen amazing returns on my investments.
           </p>
         </div>
-        <div
-        data-aos="fade-up" data-aos-duration="2000"  class="flex flex-col h-[280px] lg:h-[332px] min-w-[350px] lg:min-w-[394px] pt-5 bg-white w-full rounded-20">
+        <div data-aos="fade-up" data-aos-duration="2000"
+          class="flex flex-col h-[280px] lg:h-[332px] min-w-[350px] lg:min-w-[394px] pt-5 bg-white w-full rounded-20">
           <div class="flex items-center justify-between px-3">
             <div class="flex items-center">
               <img class="max-w-11" src="./assets/images/webp/david.webp" alt="elizabeth" />
@@ -532,8 +538,8 @@
             fantastic. It’s helped me achieve impressive profits effortlessly.
           </p>
         </div>
-        <div
-        data-aos="fade-up" data-aos-duration="2000"  class="flex flex-col h-[280px] lg:h-[332px] min-w-[350px] lg:min-w-[394px] pt-5 bg-white w-full rounded-20">
+        <div data-aos="fade-up" data-aos-duration="2000"
+          class="flex flex-col h-[280px] lg:h-[332px] min-w-[350px] lg:min-w-[394px] pt-5 bg-white w-full rounded-20">
           <div class="flex items-center justify-between px-3">
             <div class="flex items-center">
               <img class="max-w-11" src="./assets/images/webp/michael.webp" alt="michael" />
@@ -570,33 +576,39 @@
     <section class="py-12 md:py-16 lg:py-20 xl:py-32 lg:my-3 px-4 bg-off-white">
       <div
         class="flex flex-wrap justify-center xl:justify-between items-center mx-auto max-w-[1188px] gap-6 lg:gap-8 xl:flex-nowrap xl:gap-11">
-        <a href="https://www.forbes.com/">
-          <img data-aos="zoom-in-up" data-aos-duration="2000" class="w-full object-cover xl:h-[111px] max-w-[80px] xl:min-w-[125px] min-w-0 lg:max-w-[125px]"
+        <a class="duration-300 hover:scale-110" href="https://www.forbes.com/">
+          <img data-aos="zoom-in-up" data-aos-duration="2000"
+            class="w-full object-cover xl:h-[111px] max-w-[80px] xl:min-w-[125px] min-w-0 lg:max-w-[125px]"
             src="./assets/images/webp/forbes.webp" alt="news-agency" /></a>
 
-        <a href="https://www.nbc.com/"><img data-aos="zoom-in-up" data-aos-duration="2000"
+        <a class="duration-300 hover:scale-110" href="https://www.nbc.com/"><img data-aos="zoom-in-up" data-aos-duration="2000"
             class="w-full xl:h-[111px] object-cover max-w-[60px] xl:min-w-[113px] min-w-0 lg:max-w-[113px]"
             src="./assets/images/webp/nbc.webp" alt="news-agency" />
         </a>
-        <a href="https://www.foxnews.com/"><img data-aos="zoom-in-up" data-aos-duration="2000" class="w-full xl:h-[111px] object-cover max-w-[100px] lg:max-w-[149px]"
+        <a class="duration-300 hover:scale-110" href="https://www.foxnews.com/"><img data-aos="zoom-in-up" data-aos-duration="2000"
+            class="w-full xl:h-[111px] object-cover max-w-[100px] lg:max-w-[149px]"
             src="./assets/images/webp/fox-news.webp" alt="news-agency" />
         </a>
-        <a href="https://www.wsj.com/">
-          <img data-aos="zoom-in-up" data-aos-duration="2000" class="w-full xl:h-[79px] object-cover max-w-[150px] xl:min-w-[188px] lg:max-w-[188px]"
+        <a class="duration-300 hover:scale-110" href="https://www.wsj.com/">
+          <img data-aos="zoom-in-up" data-aos-duration="2000"
+            class="w-full xl:h-[79px] object-cover max-w-[150px] xl:min-w-[188px] lg:max-w-[188px]"
             src="./assets/images/webp/wall-street.webp" alt="news-agency" /></a>
-        <a href="https://www.nytimes.com/">
-          <img data-aos="zoom-in-up" data-aos-duration="2000" class="w-full xl:h-[111px] object-cover max-w-[250px] lg:max-w-[413px]"
+        <a class="duration-300 hover:scale-110" href="https://www.nytimes.com/">
+          <img data-aos="zoom-in-up" data-aos-duration="2000"
+            class="w-full xl:h-[111px] object-cover max-w-[250px] lg:max-w-[413px]"
             src="./assets/images/webp/new-york-times.webp" alt="news-agency" />
         </a>
       </div>
     </section>
     <!-- live results -->
     <section class="relative py-12 sm:py-16 md:py-20 lg:py24 xl:py-[149px]">
-      <video class="absolute top-0 w-full -z-0 h-full object-cover bg-center" muted loop autoplay
+      <video class="absolute top-0 w-full opacity-80 -z-0 h-full object-cover bg-center" muted loop autoplay
         src="./assets/video/bg-video.mp4"></video>
       <div class="flex px-4 relative z-10 flex-col items-center">
-        <img data-aos="zoom-in-up" data-aos-duration="2000" class="max-w-[87px] relative z-10" src="./assets/images/webp/group-logo.webp" alt="group-logo" />
-        <div data-aos="zoom-in-up" data-aos-duration="2000" class="flex relative mt-8 md:mt-10 lg:mt-20 z-10 items-center justify-center">
+        <img data-aos="zoom-in-up" data-aos-duration="2000" class="max-w-[87px] relative z-10"
+          src="./assets/images/webp/group-logo.webp" alt="group-logo" />
+        <div data-aos="zoom-in-up" data-aos-duration="2000"
+          class="flex relative mt-8 md:mt-10 lg:mt-20 z-10 items-center justify-center">
           <div class="lg:h-[22px] sm:w-4 w-2 h-2 sm:h-4 lg:w-[22px] rounded-[50%] flex bg-parrot-green me-2"></div>
           <h2
             class="text-white !leading-196 text_shadow_blue text-xl md:text-2xl lg:text-custom-3xl xl:text-4xl !leading-130 font-oxygen font-bold">
@@ -633,15 +645,15 @@
           <div class="flex items-center">
             <img class="max-w-5" src="./assets/images/webp/blue-tick.webp" alt="blue-tick" />
             <p class="font-roboto text-sm sm:text-base lg:text-xl !leading-142 ms-2 text-white">
-              VIP Arbitrage Winning Rate
-              <span class="text-parrot-green"> 93.2%        </span>
+             Active payouts:
+              <span class="text-parrot-green"> 3665</span>
             </p>
           </div>
           <div class="flex items-center">
             <img class="max-w-5" src="./assets/images/webp/blue-tick.webp" alt="blue-tick" />
             <p class="font-roboto text-sm sm:text-base lg:text-xl ms-2 !leading-142 text-white">
-              Active AI Arbitrage Opportunities:
-              <span class="text-parrot-green"> 6063   </span>
+            Average Member Profit:
+              <span class="text-parrot-green"> 882$/ Day   </span>
             </p>
           </div>
         </div>
@@ -660,14 +672,15 @@
           Frequently Asked Questions
         </h2>
         <div class="flex max-w-[999px] mt-12 mx-auto gap-[25px] flex-col">
-          <div
-           data-aos="zoom-in-up" data-aos-duration="2000" class="accordion-item flex shadow-accordion-shadow ps-0 pe-4 sm:px-4 md:px-5  pt-4 md:pt-5 pb-2 md:pb-3.5 border border-black border-opacity-10  rounded-20 flex-col">
-            <div class="flex items-center justify-between w-full" data-target="panel-1">
-              <h3 class="font-oxygen font-bold text-accordion-black text-base sm:text-lg md:text-xl !leading-130 ms-4">1.
+          <div data-aos="zoom-in-up" data-aos-duration="2000"
+            class="accordion-item flex shadow-accordion-shadow ps-0 pe-4 sm:px-4 md:px-5  pt-4 md:pt-5 pb-2 md:pb-3.5 border border-black border-opacity-10  rounded-20 flex-col">
+            <div class="flex cursor-pointer items-center justify-between w-full" data-target="panel-1">
+              <h3 class="font-oxygen font-bold text-accordion-black text-base sm:text-lg md:text-xl !leading-130 ms-4">
+                1.
                 How to get started?</h3>
-              <img
+            <div class="relative"><div class="absolute  bottom-[-3%] w-1 h-1 md:w-3 flex md:h-3 cursor-pointer sm:me-1 md:me-2 bg-light-sky blur-[15px] start-[2%]"></div> <img
                 class="block toggle-icon plus  sm:max-w-4 bg-transparent max-w-2.5 md:max-w-5 cursor-pointer sm:me-1 md:me-2"
-                src="./assets/images/webp/plus.webp" alt="plus">
+                src="./assets/images/webp/plus.webp" alt="plus"></div>
               <img
                 class="minus cursor-pointer md:me-2 shadow-accordion-icon sm:me-1 sm:max-w-4 bg-transparent max-w-2.5 md:max-w-5"
                 src="./assets/images/webp/minus.webp" alt="minus">
@@ -680,14 +693,15 @@
               available within the first 15 minutes after registration to ensure you don't miss the call.
             </div>
           </div>
-          <div
-           data-aos="zoom-in-up" data-aos-duration="2000" class="accordion-item flex shadow-accordion-shadow ps-0 pe-4 sm:px-4 md:px-5  pt-4 md:pt-5 pb-2 md:pb-3.5 rounded-20 flex-col border border-black border-opacity-10">
-            <div class="flex w-full items-center justify-between" data-target="panel-2">
-              <h3 class="font-oxygen font-bold text-accordion-black text-base sm:text-lg md:text-xl !leading-130 ms-4">2.
+          <div data-aos="zoom-in-up" data-aos-duration="2000"
+            class="accordion-item flex shadow-accordion-shadow ps-0 pe-4 sm:px-4 md:px-5  pt-4 md:pt-5 pb-2 md:pb-3.5 rounded-20 flex-col border border-black border-opacity-10">
+            <div class="flex cursor-pointer w-full items-center justify-between" data-target="panel-2">
+              <h3 class="font-oxygen font-bold text-accordion-black text-base sm:text-lg md:text-xl !leading-130 ms-4">
+                2.
                 Is Arbitrage Legal?</h3>
-              <img
+         <div class="relative"><div class="absolute  bottom-[-3%] w-1 h-1 md:w-3 flex md:h-3 cursor-pointer sm:me-1 md:me-2 bg-light-sky blur-[15px] start-[2%]"></div> <img
                 class="block toggle-icon plus  sm:max-w-4 bg-transparent max-w-2.5 md:max-w-5 cursor-pointer sm:me-1 md:me-2"
-                src="./assets/images/webp/plus.webp" alt="plus">
+                src="./assets/images/webp/plus.webp" alt="plus"></div>
               <img
                 class="minus cursor-pointer md:me-2 shadow-accordion-icon sm:me-1 sm:max-w-4 bg-transparent max-w-2.5 md:max-w-5"
                 src="./assets/images/webp/minus.webp" alt="minus">
@@ -700,14 +714,15 @@
               available within the first 15 minutes after registration to ensure you don't miss the call.
             </div>
           </div>
-          <div
-           data-aos="zoom-in-up" data-aos-duration="2000" class="accordion-item flex shadow-accordion-shadow ps-0 pe-4 sm:px-4 md:px-5  pt-4 md:pt-5 pb-2 md:pb-3.5 rounded-20 border border-black border-opacity-10 flex-col">
-            <div class="flex items-center w-full justify-between" data-target="panel-3">
-              <h3 class="font-oxygen font-bold text-accordion-black text-base sm:text-lg md:text-xl !leading-130 ms-4">3.
+          <div data-aos="zoom-in-up" data-aos-duration="2000"
+            class="accordion-item flex shadow-accordion-shadow ps-0 pe-4 sm:px-4 md:px-5  pt-4 md:pt-5 pb-2 md:pb-3.5 rounded-20 border border-black border-opacity-10 flex-col">
+            <div class="cursor-pointer flex items-center w-full justify-between" data-target="panel-3">
+              <h3 class="font-oxygen font-bold text-accordion-black text-base sm:text-lg md:text-xl !leading-130 ms-4">
+                3.
                 Do I need trading experience?</h3>
-              <img
+             <div class="relative"><div class="absolute  bottom-[-3%] w-1 h-1 md:w-3 flex md:h-3 cursor-pointer sm:me-1 md:me-2 bg-light-sky blur-[15px] start-[2%]"></div> <img
                 class="block toggle-icon plus  sm:max-w-4 bg-transparent max-w-2.5 md:max-w-5 cursor-pointer sm:me-1 md:me-2"
-                src="./assets/images/webp/plus.webp" alt="plus">
+                src="./assets/images/webp/plus.webp" alt="plus"></div>
               <img
                 class="minus cursor-pointer md:me-2 shadow-accordion-icon sm:me-1 sm:max-w-4 bg-transparent max-w-2.5 md:max-w-5"
                 src="./assets/images/webp/minus.webp" alt="minus">
@@ -720,14 +735,15 @@
               available within the first 15 minutes after registration to ensure you don't miss the call.
             </div>
           </div>
-          <div
-           data-aos="zoom-in-up" data-aos-duration="2000" class="accordion-item flex shadow-accordion-shadow ps-0 pe-4 sm:px-4 md:px-5  pt-4 md:pt-5 pb-2 md:pb-3.5 rounded-20 border border-black border-opacity-10 flex-col">
-            <div class="flex items-center w-full justify-between" data-target="panel-4">
-              <h3 class="font-oxygen font-bold text-accordion-black text-base sm:text-lg md:text-xl !leading-130 ms-4">4.
+          <div data-aos="zoom-in-up" data-aos-duration="2000"
+            class="accordion-item flex shadow-accordion-shadow ps-0 pe-4 sm:px-4 md:px-5  pt-4 md:pt-5 pb-2 md:pb-3.5 rounded-20 border border-black border-opacity-10 flex-col">
+            <div class="cursor-pointer flex items-center w-full justify-between" data-target="panel-4">
+              <h3 class="font-oxygen font-bold text-accordion-black text-base sm:text-lg md:text-xl !leading-130 ms-4">
+                4.
                 Can You Lose Money in Arbitrage?</h3>
-              <img
+            <div class="relative"><div class="absolute  bottom-[-3%] w-1 h-1 md:w-3 flex md:h-3 cursor-pointer sm:me-1 md:me-2 bg-light-sky blur-[15px] start-[2%]"></div> <img
                 class="block toggle-icon plus  sm:max-w-4 bg-transparent max-w-2.5 md:max-w-5 cursor-pointer sm:me-1 md:me-2"
-                src="./assets/images/webp/plus.webp" alt="plus">
+                src="./assets/images/webp/plus.webp" alt="plus"></div>
               <img
                 class="minus cursor-pointer md:me-2 shadow-accordion-icon sm:me-1 sm:max-w-4 bg-transparent max-w-2.5 md:max-w-5"
                 src="./assets/images/webp/minus.webp" alt="minus">
@@ -740,14 +756,15 @@
               available within the first 15 minutes after registration to ensure you don't miss the call.
             </div>
           </div>
-          <div
-           data-aos="zoom-in-up" data-aos-duration="2000" class="accordion-item flex shadow-accordion-shadow ps-0 pe-4 sm:px-4 md:px-5  pt-4 md:pt-5 pb-2 md:pb-3.5 rounded-20 border border-black border-opacity-10 flex-col">
-            <div class="flex items-center w-full justify-between" data-target="panel-5">
-              <h3 class="font-oxygen font-bold text-accordion-black text-base sm:text-lg md:text-xl !leading-130 ms-4">5.
+          <div data-aos="zoom-in-up" data-aos-duration="2000"
+            class="accordion-item flex shadow-accordion-shadow ps-0 pe-4 sm:px-4 md:px-5  pt-4 md:pt-5 pb-2 md:pb-3.5 rounded-20 border border-black border-opacity-10 flex-col">
+            <div class="cursor-pointer flex items-center w-full justify-between" data-target="panel-5">
+              <h3 class="font-oxygen font-bold text-accordion-black text-base sm:text-lg md:text-xl !leading-130 ms-4">
+                5.
                 What Makes Arbitrage Low-Risk?</h3>
-              <img
+            <div class="relative"><div class="absolute  bottom-[-3%] w-1 h-1 md:w-3 flex md:h-3 cursor-pointer sm:me-1 md:me-2 bg-light-sky blur-[15px] start-[2%]"></div> <img
                 class="block toggle-icon plus  sm:max-w-4 bg-transparent max-w-2.5 md:max-w-5 cursor-pointer sm:me-1 md:me-2"
-                src="./assets/images/webp/plus.webp" alt="plus">
+                src="./assets/images/webp/plus.webp" alt="plus"></div>
               <img
                 class="minus cursor-pointer md:me-2 shadow-accordion-icon sm:me-1 sm:max-w-4 bg-transparent max-w-2.5 md:max-w-5"
                 src="./assets/images/webp/minus.webp" alt="minus">
@@ -764,10 +781,10 @@
       </div>
     </section>
     <!-- ready to get -->
-    <section class="relative bg-black py-10 sm:py-16 md:py-20">
-      <video autolay muted preload="auto" class="absolute top-0 w-full h-full object-cover start-0"
+    <section class="relative bg-black py-10 sm:py-12 md:py-20">
+      <video autolay muted preload="auto" class="absolute opacity-80 top-0 w-full h-full object-cover start-0"
         src="./assets/video/bg-video.mp4"></video>
-      <div class="container mt-5 pt-2 relative z-10 mx-auto px-4">
+      <div class="container lg:mt-5 pt-2 relative z-10 mx-auto px-4">
         <div class="max-w-[360px] w-full sm:max-w-[505px] mx-auto">
           <svg class="max-w-[360px] w-full sm:max-w-[505px] mx-auto" width="507" height="1" viewBox="0 0 507 1"
             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -779,7 +796,7 @@
               fill="#00BFFF" mask="url(#path-1-inside-1_5273_685)" />
           </svg>
         </div>
-        <h2 data-aos="fade-zoom-in" data-aos-duration="2000" 
+        <h2 data-aos="fade-zoom-in" data-aos-duration="2000"
           class=" text-2xl sm:text-4xl !leading-130 text_shadow_blue text-white text-center font-bold font-oxygen py-6 max-w-[600px] mx-auto">
           Ready To
           Get 24/7
@@ -791,15 +808,18 @@
           canadians in 2024</p>
         <div
           class="bg-white my-7 md:mb-10 lg:mb-14 xl:mb-16 max-w-[1316px] mx-auto rounded-3xl sm:mt-10 md:mt-12 lg:mt-16 xl:mt-20 lg:mb-18 justify-center lg:pt-16 xl:lg-pt-24 lg:pb-16 md:py-10 py-8 sm:py-8 xl:px-0 px-2 sm:px-10 md:px-16">
-          <div class="flex flex-col-reverse gap-8 lg:gap-0 justify-center w-full mt-4 md:mt-6 lg:mt-10 px-2 lg:flex-row pb-2">
-            <div   class="xl:max-w-[553px] lg:max-w-[420px]">
-              <p data-aos="fade-up-right"  data-aos-duration="2000" class="text-xl md:text-3xl xl:text-custom-4xl !leading-130 text-black font-bold font-oxygen pb-2.5">
+          <div
+            class="flex flex-col gap-8 lg:gap-0 justify-center w-full mt-4 xl:mt-10 px-2 lg:flex-row pb-2">
+            <div class="xl:max-w-[553px] lg:max-w-[420px]">
+              <p data-aos="fade-up-right" data-aos-duration="2000"
+                class="text-xl md:text-3xl xl:text-custom-4xl !leading-130 text-black font-bold font-oxygen pb-2.5">
                 Thanks to AI
                 Arbitrage, more
                 than
                 120,000 Canadians
                 have already been able to afford:</p>
-              <div data-aos="fade-up-right" data-aos-duration="2000" class="flex gap-2 pb-2 items-start lg:items-center">
+              <div data-aos="fade-up-right" data-aos-duration="2000"
+                class="flex gap-2 pb-2 items-start lg:items-center">
                 <span>
                   <svg class="md:max-w-full sm:max-w-4 max-w-3.5" width="22" height="23" viewBox="0 0 22 23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -829,7 +849,8 @@
                   Pay off their mortgage
                 </p>
               </div>
-              <div data-aos="fade-up-right" data-aos-duration="2000" class="flex gap-2 pb-2 items-start lg:items-center">
+              <div data-aos="fade-up-right" data-aos-duration="2000"
+                class="flex gap-2 pb-2 items-start lg:items-center">
                 <span>
                   <svg class="md:max-w-full sm:max-w-4 max-w-3.5" width="22" height="23" viewBox="0 0 22 23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -860,7 +881,8 @@
 
                 </p>
               </div>
-              <div data-aos="fade-up-right" data-aos-duration="2000" class="flex gap-2 pb-2 items-start lg:items-center">
+              <div data-aos="fade-up-right" data-aos-duration="2000"
+                class="flex gap-2 pb-2 items-start lg:items-center">
                 <span>
                   <svg class="md:max-w-full sm:max-w-4 max-w-3.5" width="22" height="23" viewBox="0 0 22 23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -890,7 +912,8 @@
                   finance their
                   children's education</p>
               </div>
-              <div data-aos="fade-up-right" data-aos-duration="2000" class="flex gap-2 pb-2 items-start lg:items-center">
+              <div data-aos="fade-up-right" data-aos-duration="2000"
+                class="flex gap-2 pb-2 items-start lg:items-center">
                 <span>
                   <svg class="md:max-w-full sm:max-w-4 max-w-3.5" width="22" height="23" viewBox="0 0 22 23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -920,7 +943,8 @@
                   Quit a demanding job
                 </p>
               </div>
-              <div data-aos="fade-up-right" data-aos-duration="2000" class="flex gap-2 pb-2 items-start lg:items-center">
+              <div data-aos="fade-up-right" data-aos-duration="2000"
+                class="flex gap-2 pb-2 items-start xl:items-center">
                 <span>
                   <svg class="md:max-w-full sm:max-w-4 max-w-3.5" width="22" height="23" viewBox="0 0 22 23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -951,12 +975,19 @@
                   to their family and friends</p>
               </div>
               <div class="flex items-center gap-6 lg:gap-8 md:mt-8 mt-4 lg:mt-16 xl:mt-20 pt-2.5">
-               <a href="https://www.investing.com/"><img data-aos="zoom-in-up" data-aos-duration="2000" class="sm:max-w-[100px] max-w-[80px] lg:max-w-[150px] xl:max-w-[211px]" src="./assets/images/webp/investing.webp" alt="investing"> </a> 
-               <a href="https://www.google.com/"><img data-aos="zoom-in-up" data-aos-duration="2000" class="lg:max-w-[70px] max-w-[45px] sm:max-w-[50px]  xl:max-w-[112px]" src="./assets/images/webp/google.webp" alt="Google"> </a>
-               <a href="https://www.forbes.com/"><img data-aos="zoom-in-up" data-aos-duration="2000" class="lg:max-w-[80px] md:max-w-[60px] sm:max-w-[70px] max-w-[60px] xl:max-w-[126px]" src="./assets/images/webp/forbes-form.webp" alt="forbes"> </a> 
+                <a class="hover:scale-110 duration-300" href="https://www.investing.com/"><img data-aos="zoom-in-up" data-aos-duration="2000"
+                    class="duration-300 sm:max-w-[100px] max-w-[80px] lg:max-w-[150px] xl:max-w-[211px]"
+                    src="./assets/images/webp/investing.webp" alt="investing"> </a>
+                <a class="hover:scale-110 duration-300" href="https://www.google.com/"><img data-aos="zoom-in-up" data-aos-duration="2000"
+                    class="duration-300 lg:max-w-[70px] max-w-[45px] sm:max-w-[50px]  xl:max-w-[112px]"
+                    src="./assets/images/webp/google.webp" alt="Google"> </a>
+                <a class="hover:scale-110 duration-300" href="https://www.forbes.com/"><img data-aos="zoom-in-up" data-aos-duration="2000"
+                    class="duration-300 lg:max-w-[80px] md:max-w-[60px] sm:max-w-[70px] max-w-[60px] xl:max-w-[126px]"
+                    src="./assets/images/webp/forbes-form.webp" alt="forbes"> </a>
               </div>
             </div>
-            <div data-aos="fade-up-left" data-aos-duration="2000" class="flex flex-col lg:max-w-[528px] lg:ms-6 xl:ms-16">
+            <div data-aos="fade-up-left" data-aos-duration="2000"
+              class="flex flex-col lg:max-w-[528px] lg:ms-6 xl:ms-16">
               <div class=" border border-opacity-10 border-black rounded-xl md:rounded-[15px] overflow-hidden">
                 <div class="bg-light-sky">
                   <p
@@ -968,81 +999,113 @@
                     Opportunities for
                     You!</p>
                 </div>
-                <div class="px-2 sm:px-[30px] pt-4">
-                  <form id="signupForm" class="w-full">
-                    <div class="w-full gap-2 flex">
-                      <div class="flex flex-col w-1/2">
-                        <label class="text-base font-normal font-roboto text-black !leading-117" for="firstName">First
-                          Name</label>
-                        <input
-                          class="max-w-[230px] border border-gray focus:border-transparent focus:outline-sky rounded-full px-4 mt-2 w-full sm:h-[52px] h-10 text-base font-normal font-roboto text-black !leading-117"
-                          id="firstName" type="text">
-                      </div>
-                      <div class="flex flex-col w-1/2">
-                        <label class="text-base font-normal font-roboto text-black !leading-117" for="lastName">Last
-                          Name</label>
-                        <input
-                          class="max-w-[230px] border border-gray focus:border-transparent focus:outline-sky rounded-full px-4 mt-2 w-full sm:h-[52px] h-10 text-base font-normal font-roboto text-black !leading-117"
-                          id="lastName" type="text">
-                      </div>
-                    </div>
-                    <div class="flex flex-col w-full pt-2">
-                      <label class="text-base font-normal font-roboto text-black !leading-117" for="email">Email</label>
-                      <input
-                        class="border border-gray focus:border-transparent focus:outline-sky rounded-full px-4 mt-2 w-full sm:h-[52px] h-10 text-base font-normal font-roboto text-black !leading-117"
-                        id="email" type="email">
-                    </div>
-                    <div class="flex flex-col w-full pt-2">
-                      <label class="text-base font-normal font-roboto text-black !leading-117"
-                        for="number">Number</label>
-                      <div class="relative overflow-hidden sm:h-[52px] h-10 mt-2 rounded-full">
-                        <input
-                          class="border border-gray focus:border-transparent focus:outline-sky rounded-full ps-[107px] pr-4 w-full sm:h-[52px] h-10 text-base font-normal font-roboto !text-black !leading-120"
-                          id="number" type="number">
-                        <div class="flex absolute sm:h-14 h-10 top-0 left-0 items-center bg-off-white gap-2.5">
-                          <span class="ps-3.5">
-                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path d="M1.94531 6.61133H26.0564V21.3891H1.94531V6.61133Z" fill="white" />
-                              <path
-                                d="M1.94531 6.61133H8.55642V21.3891H1.94531V6.61133ZM19.4453 6.61133H26.0564V21.3891H19.4453V6.61133Z"
-                                fill="#D22F27" />
-                              <path
-                                d="M14.0002 17.8891V15.9447V17.8891ZM14.0002 15.9447H16.6447L16.3336 15.1669L17.8891 13.6113V12.4447H16.7224L15.1669 14.0002V11.278L14.0002 10.1113M14.0002 15.9447H11.3558L11.6669 15.1669L10.1113 13.6113V12.4447H11.278L12.8336 14.0002V11.278L14.0002 10.1113"
-                                fill="#D22F27" />
-                              <path
-                                d="M14.0002 17.8891V15.9447M14.0002 15.9447H16.6447L16.3336 15.1669L17.8891 13.6113V12.4447H16.7224L15.1669 14.0002V11.278L14.0002 10.1113L12.8336 11.278V14.0002L11.278 12.4447H10.1113V13.6113L11.6669 15.1669L11.3558 15.9447H14.0002Z"
-                                stroke="#D22F27" stroke-width="0.777778" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                              <path d="M1.94531 6.61133H26.0564V21.3891H1.94531V6.61133Z" stroke="black"
-                                stroke-width="0.777778" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                          </span>
-                          <p class="text-black font-normal font-roboto text-base">
-                            +1
-                          </p>
-                          <span class="pr-1.5">
-                            <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M1.37461 0.845757H9.62461C9.70814 0.846019 9.79001 0.869056 9.86142 0.912389C9.93283 0.955721 9.99107 1.01771 10.0299 1.09168C10.0687 1.16565 10.0866 1.2488 10.0816 1.33218C10.0767 1.41556 10.0491 1.49601 10.0018 1.56488L5.87682 7.52321C5.70586 7.77026 5.29428 7.77026 5.12286 7.52321L0.997862 1.56488C0.950115 1.49616 0.922115 1.41566 0.916904 1.33214C0.911694 1.24862 0.929471 1.16527 0.968306 1.09115C1.00714 1.01702 1.06555 0.954953 1.13718 0.911691C1.20881 0.868429 1.29093 0.845625 1.37461 0.845757Z"
-                                fill="black" />
-                            </svg>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <button type="submit"
-                      class="py-3 text-white font-roboto shadow-form-btn rounded-full hover:bg-black duration-300 mt-9 mb-3 bg-light-sky text-base w-full text-center font-bold !leading-150">Sign
-                      Up</button>
-                  </form>
+            <div class="px-2 sm:px-[30px] pt-4">
+    <form id="signupForm" class="w-full">
+      <div class="w-full gap-2 flex">
+        <div class="flex flex-col w-1/2">
+          <label class="text-base font-normal font-roboto text-black !leading-117" for="firstName">First Name</label>
+          <input
+            class="max-w-[230px] border border-black border-opacity-20 focus:border-transparent focus:outline-lightest-sky rounded-full px-4 mt-2 w-full sm:h-[52px] h-10 text-base font-normal font-roboto text-black !leading-117"
+            id="firstName" type="text">
+        </div>
+        <div class="flex flex-col w-1/2">
+          <label class="text-base font-normal font-roboto text-black !leading-117" for="lastName">Last Name</label>
+          <input
+            class="max-w-[230px] border border-black border-opacity-20 focus:border-transparent focus:outline-lightest-sky rounded-full px-4 mt-2 w-full sm:h-[52px] h-10 text-base font-normal font-roboto text-black !leading-117"
+            id="lastName" type="text">
+        </div>
+      </div>
+      <div class="flex flex-col w-full pt-2">
+        <label class="text-base font-normal font-roboto text-black !leading-117" for="email">Email</label>
+        <input
+          class="border border-black border-opacity-20 focus:border-transparent focus:outline-lightest-sky rounded-full px-4 mt-2 w-full sm:h-[52px] h-10 text-base font-normal font-roboto text-black !leading-117"
+          id="email" type="email">
+      </div>
+      <div class="flex flex-col w-full pt-2">
+        <label class="text-base font-normal font-roboto text-black !leading-117" for="number">Number</label>
+       <div class="relative mt-2">
+  <input
+    class="border border-black border-opacity-20 focus:border-transparent focus:outline-lightest-sky rounded-full ps-[92px] pr-4 w-full sm:h-[52px] h-10 text-base font-normal font-roboto text-black !leading-117"
+    id="number" type="number">
+  <div
+    class="absolute border-t border-l border-b border-black border-opacity-20 !max-w-[84px] inset-y-0 left-0 flex items-center px-2 bg-off-white  border-gray rounded-l-full cursor-pointer dropdown-toggle"
+    id="dropdownButton">
+    <span class="mr-2">
+      <!-- Default Flag Icon -->
+      <img src="https://flagcdn.com/w20/ca.png" alt="CA Flag" id="selectedFlag" class="w-5 h-3">
+    </span>
+    <p class="text-black text-sm whitespace-nowrap" id="selectedCode">+1</p>
+    <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1.37461 0.845757H9.62461C9.70814 0.846019 9.79001 0.869056 9.86142 0.912389C9.93283 0.955721 9.99107 1.01771 10.0299 1.09168C10.0687 1.16565 10.0866 1.2488 10.0816 1.33218C10.0767 1.41556 10.0491 1.49601 10.0018 1.56488L5.87682 7.52321C5.70586 7.77026 5.29428 7.77026 5.12286 7.52321L0.997862 1.56488C0.950115 1.49616 0.922115 1.41566 0.916904 1.33214C0.911694 1.24862 0.929471 1.16527 0.968306 1.09115C1.00714 1.01702 1.06555 0.954953 1.13718 0.911691C1.20881 0.868429 1.29093 0.845625 1.37461 0.845757Z" fill="black" />
+    </svg>
+  </div>
+  <!-- Dropdown menu -->
+  <div class="absolute left-0 w-full bg-off-white border border-gray rounded dropdown-menu z-10 hidden">
+    <ul class="list-none p-0 m-0">
+      <!-- Example Flag Items -->
+      <li class="flex items-center p-2 hover:bg-gray-200 cursor-pointer" data-country-code="+1" data-flag="https://flagcdn.com/w20/ca.png">
+        <span class="mr-2">
+          <img src="https://flagcdn.com/w20/ca.png" alt="CA Flag" class="w-5 h-3">
+        </span>
+        <p class="text-black text-sm whitespace-nowrap">+1</p>
+      </li>
+      <li class="flex items-center p-2 hover:bg-gray-200 cursor-pointer" data-country-code="+91" data-flag="https://flagcdn.com/w20/in.png">
+        <span class="mr-2">
+          <img src="https://flagcdn.com/w20/in.png" alt="IN Flag" class="w-5 h-3">
+        </span>
+        <p class="text-black text-sm whitespace-nowrap">+91</p>
+      </li>
+      <li class="flex items-center p-2 hover:bg-gray-200 cursor-pointer" data-country-code="+1" data-flag="https://flagcdn.com/w20/us.png">
+        <span class="mr-2">
+          <img src="https://flagcdn.com/w20/us.png" alt="US Flag" class="w-5 h-3">
+        </span>
+        <p class="text-black text-sm whitespace-nowrap">+1</p>
+      </li>
+      <li class="flex items-center p-2 hover:bg-gray-200 cursor-pointer" data-country-code="+44" data-flag="https://flagcdn.com/w20/gb.png">
+        <span class="mr-2">
+          <img src="https://flagcdn.com/w20/gb.png" alt="GB Flag" class="w-5 h-3">
+        </span>
+        <p class="text-black text-sm whitespace-nowrap">+44</p>
+      </li>
+      <!-- Additional Country Items -->
+      <li class="flex items-center p-2 hover:bg-gray-200 cursor-pointer" data-country-code="+49" data-flag="https://flagcdn.com/w20/de.png">
+        <span class="mr-2">
+          <img src="https://flagcdn.com/w20/de.png" alt="DE Flag" class="w-5 h-3">
+        </span>
+        <p class="text-black text-sm whitespace-nowrap">+49</p>
+      </li>
+      <li class="flex items-center p-2 hover:bg-gray-200 cursor-pointer" data-country-code="+33" data-flag="https://flagcdn.com/w20/fr.png">
+        <span class="mr-2">
+          <img src="https://flagcdn.com/w20/fr.png" alt="FR Flag" class="w-5 h-3">
+        </span>
+        <p class="text-black text-sm whitespace-nowrap">+33</p>
+      </li>
+      <li class="flex items-center p-2 hover:bg-gray-200 cursor-pointer" data-country-code="+81" data-flag="https://flagcdn.com/w20/jp.png">
+        <span class="mr-2">
+          <img src="https://flagcdn.com/w20/jp.png" alt="JP Flag" class="w-5 h-3">
+        </span>
+        <p class="text-black text-sm whitespace-nowrap">+81</p>
+      </li>
+      <!-- Add more items as needed -->
+    </ul>
+  </div>
+</div>
 
-                  <p class="text-black font-bold font-oxygen text-xl !leading-130 text-center pb-5">4
-                    Spots
-                    Left
-                  </p>
-                </div>
-              </div>
+      </div>
+      <button type="submit" class="py-3 text-white font-roboto shadow-form-btn rounded-full hover:bg-black duration-300 mt-9 mb-3 bg-light-sky text-base w-full text-center font-bold !leading-150">Sign Up</button>
+    </form>
+
+    <p class="text-black font-bold font-oxygen text-xl !leading-130 text-center pb-5">4 Spots Left</p>
+  </div>
+
+  <!-- Modal HTML -->
+  <div id="successModal" class="fixed inset-0 z-50 flex items-center justify-center bg-gray-900 bg-opacity-50 hidden">
+    <div class="bg-white p-8 rounded-lg w-11/12 max-w-md relative">
+      <span class="absolute top-2 right-2 text-xl cursor-pointer" id="closeModal">&times;</span>
+      <h2 class="text-center text-lg font-bold">Success!</h2>
+      <p class="text-center mt-2">Your form has been submitted successfully.</p>
+    </div>
+  </div></div>
               <div class="flex justify-between max-w-[335px] mx-auto pt-6">
                 <div>
                   <div id="hours"
@@ -1103,14 +1166,14 @@
               Sort by:
             </p>
             <div class="px-4 border-[2px] ms-4 border-light-sky rounded-[3px]">
-              <p class="px-0.5 !leading-130 font-inter text-base md:text-lg lg:text-xl text-off-black font-semibold">
+              <p class="px-0.5 !leading-130 font-inter text-base sm:py-2 md:text-lg lg:text-xl text-off-black font-semibold">
                 Top
               </p>
             </div>
           </div>
         </div>
         <div data-aos="zoom-in-up" data-aos-duration="2000" class="flex mt-6 sm:mt-8 md:mt-12 lg:mt-16">
-          <img class="md:max-w-[70px]  lg:max-w-[80px] xl:max-w-[91px] max-w-[50px]"
+          <img class="md:max-w-[70px] rounded-[100%]  lg:max-w-[80px] xl:max-w-[91px] max-w-[50px]"
             src="./assets/images/webp/comment-profile.webp" alt="profile" />
           <div
             class="flex w-full ms-3 md:ms-6 lg:ms-8 xl:ms-11 px-4 items-center rounded-114 border border-black border-opacity-[48%]">
@@ -1120,8 +1183,9 @@
               src="./assets/images/webp/commetn-post.webp" alt="comment-post" />
           </div>
         </div>
-        <div data-aos="fade-up-right" data-aos-duration="2000" class="flex items-start mt-6 sm:mt-8 md:mt-10 lg:mt-16 pt-1">
-          <img class="md:max-w-[70px]  lg:max-w-[80px] xl:max-w-[91px] max-w-[50px]"
+        <div data-aos="fade-up-right" data-aos-duration="2000"
+          class="flex items-start mt-6 sm:mt-8 md:mt-10 lg:mt-16 pt-1">
+          <img class="md:max-w-[70px] rounded-[100%] lg:max-w-[80px] xl:max-w-[91px] max-w-[50px]"
             src="./assets/images/webp/james-jhonson.webp" alt="james-jhonson" />
           <div class="flex flex-col ms-3 md:ms-6 lg:ms-8 xl:ms-11">
             <p class="text-light-sky font-inter font-semibold text-base !leading-130 md:text-lg lg:text-xl">
@@ -1141,7 +1205,8 @@
             <div
               class="flex flex-col border border-opacity-15 border-s border-l-0 border-b-0 border-t-0 border-e-0 mt-7 pt-2 border-black ps-3.5">
               <div class="flex items-start">
-                <img class="max-w-8 md:max-w-10 lg:max-w-16" src="./assets/images/webp/mia-moore.webp" alt="mia-moore" />
+                <img class="max-w-8 md:max-w-10 lg:max-w-16" src="./assets/images/webp/mia-moore.webp"
+                  alt="mia-moore" />
                 <div class="flex flex-col ms-3 md:ms-6 lg:ms-8 xl:ms-11">
                   <p class="text-light-sky font-inter font-semibold text-base !leading-130 md:text-lg lg:text-xl">
                     Mia Moore
@@ -1188,7 +1253,7 @@
           </div>
         </div>
         <div data-aos="fade-up-right" data-aos-duration="2000" class="flex items-start mt-5 md:mt-6 lg:mt-9">
-          <img class="md:max-w-[70px]  lg:max-w-[80px] xl:max-w-[91px] max-w-[50px]"
+          <img class="md:max-w-[70px] rounded-[100%]  lg:max-w-[80px] h-[50px] md:h-[70px] lg:h-[80px] xl:h-[91px] object-cover xl:max-w-[91px] max-w-[50px]"
             src="./assets/images/webp/olivia-anderson.webp" alt="olivia-anderson" />
           <div class="flex flex-col ms-3 md:ms-6 lg:ms-8 xl:ms-11">
             <p class="text-light-sky font-inter font-semibold text-base !leading-130 md:text-lg lg:text-xl">
@@ -1208,7 +1273,7 @@
           </div>
         </div>
         <div data-aos="fade-up-right" data-aos-duration="2000" class="flex items-start mt-5 md:mt-6 lg:mt-9">
-          <img class="md:max-w-[70px]  lg:max-w-[80px] xl:max-w-[91px] max-w-[50px]"
+          <img class="md:max-w-[70px] rounded-[100%]  lg:max-w-[80px] xl:max-w-[91px] max-w-[50px]"
             src="./assets/images/webp/andrew-harris.webp" alt="olivia-anderson" />
           <div class="flex flex-col ms-3 md:ms-6 lg:ms-8 xl:ms-11">
             <p class="text-light-sky font-inter font-semibold text-base !leading-130 md:text-lg lg:text-xl">
@@ -1230,7 +1295,7 @@
           </div>
         </div>
         <div data-aos="fade-up-right" data-aos-duration="2000" class="flex items-start mt-5 md:mt-6 lg:mt-9">
-          <img class="md:max-w-[70px]  lg:max-w-[80px] xl:max-w-[91px] max-w-[50px]"
+          <img class="md:max-w-[70px] rounded-[100%]  lg:max-w-[80px] xl:max-w-[91px] max-w-[50px]"
             src="./assets/images/webp/issabela.webp" alt="issabela" />
           <div class="flex flex-col ms-3 md:ms-6 lg:ms-8 xl:ms-11">
             <p class="text-light-sky font-inter font-semibold text-base !leading-130 md:text-lg lg:text-xl">
@@ -1292,15 +1357,16 @@
                 </div>
 
               </div>
-              <div class="flex mt-12 justify-center items-center bg-light-gray w-full max-w-[611px] py-2.5">
-                <p class="text-center text-sm md:text-base text-off-black font-inter !leading-145 px-3">Show 10 more
+              <div class="flex mt-12 justify-center hover:bg-light-sky group cursor-pointer  duration-300 items-center bg-light-gray w-full max-w-[611px] py-2.5">
+                <p class="text-center text-sm md:text-base text-off-black group-hover:text-white font-inter !leading-145 px-3">Show 10 more
                   replies in this thread</p>
               </div>
             </div>
           </div>
         </div>
-        <div data-aos="fade-up-right" data-aos-duration="2000" class="flex mb-1 items-start mt-7 md:mt-8 lg:mt-14 pt-0.5">
-          <img class="md:max-w-[70px]  lg:max-w-[80px] xl:max-w-[91px] max-w-[50px]"
+        <div data-aos="fade-up-right" data-aos-duration="2000"
+          class="flex mb-1 items-start mt-7 md:mt-8 lg:mt-14 pt-0.5">
+          <img class="md:max-w-[70px] rounded-[100%]  lg:max-w-[80px] xl:max-w-[91px] max-w-[50px]"
             src="./assets/images/webp/sophia-martinez.webp" alt="olivia-anderson" />
           <div class="flex flex-col ms-3 md:ms-6 lg:ms-8 xl:ms-11">
             <p class="text-light-sky font-inter font-semibold text-base !leading-130 md:text-lg lg:text-xl">
@@ -1358,8 +1424,9 @@
     </footer>
 
   </div>
+
   <!-- aos -->
-   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- j quairy min js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -1379,7 +1446,6 @@
       const videoId = playButtonId.replace("playButton", "video");
       const video = document.getElementById(videoId);
 
-      // Pause and reset the currently playing video if it exists and is different from the new one
       if (currentPlayingVideo && currentPlayingVideo !== video) {
         currentPlayingVideo.pause();
         currentPlayingVideo.removeAttribute("controls");
@@ -1416,6 +1482,30 @@
       button.addEventListener("click", handlePlayButtonClick);
     });
   </script>
+  <!-- country code -->
+  <Script>
+    document.getElementById('dropdownButton').addEventListener('click', function () {
+      document.querySelector('.dropdown-menu').classList.toggle('hidden');
+    });
+
+    // Close dropdown when clicking outside of it
+    document.addEventListener('click', function (event) {
+      if (!document.getElementById('dropdownButton').contains(event.target) &&
+        !document.querySelector('.dropdown-menu').contains(event.target)) {
+        document.querySelector('.dropdown-menu').classList.add('hidden');
+      }
+    });
+
+    // Update input value when an item is clicked
+    document.querySelectorAll('.dropdown-menu li').forEach(item => {
+      item.addEventListener('click', function () {
+        const countryCode = this.getAttribute('data-country-code');
+        document.getElementById('number').value = countryCode;
+        document.querySelector('.dropdown-menu').classList.add('hidden');
+      });
+    });
+
+  </Script>
   <!-- accordion -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -1467,15 +1557,40 @@
     });
 
   </script>
-  <!-- input form -->
+<!-- form -->
   <script>
-    document.getElementById('signupForm').addEventListener('submit', function (event) {
+    // Dropdown menu functionality
+    document.getElementById('dropdownButton').addEventListener('click', function() {
+      document.querySelector('.dropdown-menu').classList.toggle('show');
+    });
+
+    document.addEventListener('click', function(event) {
+      if (!document.getElementById('dropdownButton').contains(event.target) &&
+          !document.querySelector('.dropdown-menu').contains(event.target)) {
+        document.querySelector('.dropdown-menu').classList.remove('show');
+      }
+    });
+
+    document.querySelectorAll('.dropdown-menu li').forEach(item => {
+      item.addEventListener('click', function() {
+        const countryCode = this.getAttribute('data-country-code');
+        const flagSrc = this.getAttribute('data-flag');
+        const countryText = this.querySelector('p').textContent;
+        document.getElementById('number').value = countryCode;
+        document.getElementById('selectedFlag').src = flagSrc;
+        document.getElementById('selectedCode').textContent = countryText;
+        document.querySelector('.dropdown-menu').classList.remove('show');
+      });
+    });
+
+    // Form submission and validation
+    document.getElementById('signupForm').addEventListener('submit', function(event) {
       event.preventDefault();
 
-      var firstName = document.getElementById('firstName').value;
-      var lastName = document.getElementById('lastName').value;
-      var email = document.getElementById('email').value;
-      var number = document.getElementById('number').value;
+      const firstName = document.getElementById('firstName').value;
+      const lastName = document.getElementById('lastName').value;
+      const email = document.getElementById('email').value;
+      const number = document.getElementById('number').value;
 
       if (firstName === '' || lastName === '' || email === '') {
         alert('All fields are required!');
@@ -1488,19 +1603,28 @@
       document.getElementById('email').value = '';
       document.getElementById('number').value = '';
 
-      // Show the popup
-      document.getElementById('popup').style.display = 'block';
-      document.body.classList.add('overflow-hidden');
+      // Show success modal
+      const modal = document.getElementById('successModal');
+      modal.classList.remove('hidden');
     });
 
-    function closePopup() {
-      document.getElementById('popup').style.display = 'none';
-      document.body.classList.remove('overflow-hidden');
-    }
+    // Modal close functionality
+    document.getElementById('closeModal').addEventListener('click', function() {
+      const modal = document.getElementById('successModal');
+      modal.classList.add('hidden');
+    });
+
+    // Close the modal when clicking outside of it
+    window.addEventListener('click', function(event) {
+      const modal = document.getElementById('successModal');
+      if (event.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
   </script>
   <!-- timer -->
   <script>
-    const endTime = new Date().getTime() + (1 * 60 * 60 * 1000) + (30 * 60 * 1000); 
+    const endTime = new Date().getTime() + (1 * 60 * 60 * 1000) + (30 * 60 * 1000);
 
     function updateTimer() {
       const now = new Date().getTime();
@@ -1573,10 +1697,10 @@
     const currentYear = new Date().getFullYear();
     document.getElementById('year').textContent = currentYear;
   </script>
-<!-- aos -->
-<script>
-  AOS.init({once:true,});
-</script>
+  <!-- aos -->
+  <script>
+    AOS.init({ once: true, });
+  </script>
 </body>
 
 </html>
